@@ -1,0 +1,10 @@
+@import "./components/Nav";
+
+
+.header {
+  display: flex;
+  margin: 0 auto;
+  color: var(--font-color);
+  font-size: var(--header-text-size);
+}
+

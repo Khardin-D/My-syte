@@ -1,0 +1,80 @@
+.footer-info-box {
+  display: flex;
+  gap: 70px;
+  width: 100%;
+}
+.footer-nft {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  width: 327px;
+}
+.footer-nft-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  p {
+    color: var(--foot-color);
+  }
+}
+.footer-nft-community {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+.footer-nft-community-icon {
+  display: flex;
+  gap: 10px;
+}
+.footer-explore {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+  p {
+    @include h5Space;
+  }
+}
+.footer-explore-pages {
+  ul {
+    li {
+      color: var(--foot-color);
+      margin-bottom: 20px;
+    }
+  }
+}
+.footer-subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+  p {
+    @include h5;
+  }
+}
+.footer-subscribe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  span {
+    color: var(--foot-color);
+  }
+}
+.subscribe-title-folover {
+    input {
+        padding-left: 15px;
+        // font-size: 20px;
+      position: relative;
+    width: 100%;
+    height: 60px;
+    border-radius: 20px;
+  }
+  span {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

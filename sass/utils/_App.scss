@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  color: var(--font-color);
+  padding: 0 20px;
+  background-color: var(--bg-color);
+}
+body {
+  margin: 0 auto;
+  font-family: "Work Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%; /* 22.4px */
+  font-style: normal;
+}
+
+li {
+  list-style: none;
+}
+
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  // background-color: inherit;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+a,
+input {
+  text-decoration: none; /* Убирает подчеркивание по умолчанию */
+  color: black; /* Устанавливает цвет текста на наследованный цвет */
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+}
+
+.container-header {
+  width: 1280px;
+  padding: 20px 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.container {
+  max-width: 1050px;
+  margin-right: auto;
+  margin-left: auto;
+  // background-color: transparent;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin nav-text {
+  text-align: center;
+  font-family: "Work Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%; /* 22.4px */
+}
+
+@mixin text-600 {
+  color: var(--White, #fff);
+  font-family: Work Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+@mixin h1 {
+  font-family: "Work Sans";
+  font-size: 67px;
+  font-weight: 600;
+  line-height: 110%; /* 73.7px */
+  text-transform: capitalize;
+}
+
+@mixin h2 {
+  font-family: "Work Sans";
+  font-size: 51px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%; /* 56.1px */
+  text-transform: capitalize;
+}
+
+@mixin h3 {
+  font-family: "Work Sans";
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 120%; /* 45.6px */
+  text-transform: capitalize;
+}
+
+@mixin h3Space {
+  font-family: "Space Mono";
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 45.6px */
+  text-transform: capitalize;
+}
+
+@mixin h4 {
+  font-family: "Space Mono";
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 140%; /* 39.2px */
+  text-transform: capitalize;
+}
+
+@mixin h4Work {
+  font-family: "Work Sans";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 39.2px */
+  text-transform: capitalize;
+}
+
+@mixin h5 {
+  font-family: "Work Sans";
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 140%; /* 30.8px */
+  text-transform: capitalize;
+}
+
+@mixin h5Space {
+  font-family: "Space Mono";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 35.2px */
+  text-transform: capitalize;
+}
+
+@mixin body-text {
+  font-family: "Work Sans";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 160%; /* 35.2px */
+  text-transform: capitalize;
+}
+
+@mixin Caption {
+  font-family: "Space Mono";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 13.2px */
+  color: #858584;
+}
+
+@mixin Caption-110 {
+  text-align: center;
+  font-family: "Work Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 16.8px */
+}
+
+@mixin foto {
+  background-repeat: no-repeat;
+  background-color: lightgray;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+@mixin button {
+  display: flex;
+  height: 60px;
+  padding: 0px 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.categories-card {
+  &:hover {
+
+    scale: 1.1;
+  }
+}

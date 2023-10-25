@@ -1,0 +1,257 @@
+@media only screen and (max-width: 834px) {
+  .container {
+    width: 690px;
+  }
+  header {
+    margin: 0 auto;
+  }
+  .container-header {
+    padding: 20px 0;
+  }
+
+  .object-text {
+    h1 {
+      @include h3;
+    }
+    p {
+      align-items: flex-start;
+      @include nav-text;
+    }
+  }
+  .object-buttons {
+    a {
+      font-weight: 600;
+      color: var(--font-color);
+    }
+  }
+  .object-folovers {
+    ul {
+      li {
+        &:nth-child(n + 1):nth-child(-n + 3) {
+          @include h5;
+        }
+        &:nth-child(n + 4):nth-child(-n + 6) {
+          @include nav-text;
+          text-align: left;
+        }
+      }
+    }
+  }
+  .object-foto {
+    height: auto;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+  }
+  // ! Colections
+
+  .colections-title {
+    ul {
+      li {
+        &:first-child {
+          @include h4Work;
+        }
+      }
+    }
+  }
+  .colections-card {
+    &:nth-child(n + 3) {
+      display: none;
+    }
+  }
+  // ! Colections
+  // ! Top Artist
+  .top-artist {
+  }
+  .artist-colum {
+    padding: 40x 0;
+  }
+  .artist-button {
+    &::before {
+      content: "";
+      height: 20px;
+      width: 30px;
+    }
+  }
+  .artist-card {
+    display: flex;
+    flex-direction: row;
+    &:nth-child(n + 7) {
+      display: none;
+    }
+    &::before {
+      left: 10px;
+      top: 13px;
+    }
+  }
+  .artist-avatar-foto {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+  }
+  .artist-info {
+    width: 100%;
+    gap: 0;
+    p {
+      width: 100%;
+      text-align: left;
+    }
+  }
+  .h5 {
+  }
+  .artist-cost {
+    width: 100%;
+    display: flex;
+    // flex-direction: row;
+    gap: 5px;
+    span {
+      text-align: left;
+      width: 100%;
+      @include nav-text;
+    }
+  }
+  // ! Top Artist
+
+  // ! Categories
+  .categories {
+    padding: 40px 0;
+  }
+  .categories-title {
+    span {
+      @include h4;
+    }
+  }
+  .categories-card {
+    width: 150px;
+  }
+  .categories-card-foto {
+    background: lightgray;
+    // opacity: 0.6;
+    img {
+      filter: blur(5px);
+      width: 150px;
+      height: 100%;
+    }
+  }
+  .categories-card-title {
+    padding: 20px 20px 25px 20px;
+    span {
+      white-space: nowrap;
+      @include text-600;
+    }
+  }
+  // ! Categories
+
+  // ! Nft
+  .nft-box-title {
+    p {
+      @include h4;
+    }
+    span {
+      @include nav-text;
+    }
+  }
+  .nft-box-button {
+    span {
+      @include text-600;
+    }
+  }
+  .nft-card {
+    &:nth-child(n + 3) {
+      display: none;
+    }
+  }
+  // ! Nft
+
+  // ! Magic
+  .magic-artist-name {
+    span {
+      display: flex;
+      padding: 10px 20px;
+      align-items: center;
+      gap: 12px;
+      background-color: var(--bg-color-card);
+      border-radius: 20px;
+    }
+  }
+  .magic-artist-name-two {
+    span {
+      @include h3;
+    }
+  }
+  // ! Magic
+
+  // ! Works
+  .works {
+    padding: 40px 0;
+  }
+  .works-card {
+    // width: 100%;
+    width: 210px;
+    height: 320px;
+  }
+  .works-card-foto {
+    img {
+      height: 150px;
+      width: 150px;
+    }
+  }
+  .works-card-title {
+    span {
+      @include text-600;
+    }
+    p {
+      overflow: hidden;
+      @include Caption-110;
+    }
+  }
+  // ! Works
+
+  // ! Subskribe
+  .subscribe-box {
+    gap: 30px;
+    padding: 40px 30px;
+  }
+  .subscribe-image {
+    width: 300px;
+    // height: 280px;
+    background-size: cover;
+  }
+  .subscribe-title {
+    width: 300px;
+  }
+  .subscribe-title-name {
+    span {
+      &:first-child {
+        @include h4;
+      }
+    }
+  }
+  .subscribe-title-folover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    input {
+      position: relative;
+    }
+    span {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      cursor: pointer;
+      &:last-child {
+        left: 0;
+      }
+    }
+  }
+  // ! Subskribe
+
+  // ! FOOTER
+  .footer-info-box {
+    flex-direction: column;
+    gap: 30px;
+  }
+  // ! FOOTER
+}

@@ -1,0 +1,124 @@
+.categories {
+  padding: 80px 0;
+}
+
+.categories-title {
+  margin-bottom: 60px;
+  span {
+    @include h3;
+  }
+}
+.categories-card-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+}
+
+.categories-card-foto {
+  display: flex;
+  justify-content: center;
+  background-color: var(--bg-color-card);
+
+  border-radius: 20px 20px 0px 0px;
+  position: relative;
+  
+  img {
+    filter: blur(5.5px);
+    width: 240px;
+    height: 240px;
+    border-radius: 20px 20px 0 0;
+  }
+}
+
+.one {
+  &::before {
+    content: url(../../../../assets/icons/PaintBrush.svg);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+}
+
+.two {
+  &::before {
+    content: url(../../../../assets/icons/Swatches.svg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+}
+
+.three {
+  &::before {
+    content: url(../../../../assets/icons/MusicNotes.svg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+}
+.four {
+  &::before {
+    content: url(../../../../assets/icons/Camera.svg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+}
+.five {
+  &::before {
+    content: url(../../../../assets/icons/VideoCamera.svg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+}
+.six {
+  &::before {
+    content: url(../../../../assets/icons/MagicWand.svg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+}
+.seven {
+  &::before {
+    content: url(../../../../assets/icons/Basketball.svg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+}
+.night {
+  &::before {
+    content: url(../../../../assets/icons/Planet.svg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+}
+
+.categories-card-title {
+  @include h5;
+  background-color: var(--bg-color-card);
+  padding: 20px 30px 25px 30px;
+  border-radius: 0 0 20px 20px;
+}

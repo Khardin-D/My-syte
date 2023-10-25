@@ -1,0 +1,135 @@
+.nft {
+  padding: 80px 0;
+}
+
+.nft-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+.nft-box-title {
+  p {
+    margin-bottom: 10px;
+    @include h3;
+  }
+  span {
+    @include body-text;
+  }
+}
+.nft-box-button {
+  @include button;
+  @include nav-text;
+  border-radius: 20px;
+  border: 2px solid #a259ff;
+  &::before {
+    content: url(../../../../assets/icons/Eye.svg);
+    width: 20px;
+    height: 20px;
+  }
+}
+.nft-card-box {
+  display: flex;
+  align-self: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.nft-card {
+  background-color: var(--bg-color-card);
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 0 0;
+}
+.nft-card-image {
+  background-color: inherit;
+  border-radius: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+  height: 100%;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    align-self: stretch;
+    border-radius: 20px 20px 0 0;
+  }
+}
+.nft-card-title {
+  display: flex;
+  padding: 20px 30px 25px 30px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+  align-self: stretch;
+  background-color: inherit;
+  border-radius: 0 0 20px 20px;
+}
+.nft-card-title-name {
+  background-color: inherit;
+
+  
+  
+  p {
+    @include h5;
+  }
+  span{
+    display: flex;
+    @include nav-text;
+    &::before {
+      content: "";
+      display: inline-flex;
+      align-items: center;
+      background-image: url(../../../../assets/avatars/avatar1.png);
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      @include foto;
+      margin-right: 12px;
+    }
+  }
+}
+
+.nft-card-title-info {
+  background-color: inherit;
+  display: flex;
+  align-items: flex-start;
+  align-self: stretch;
+  border-radius: 0 0 20px 20px;
+}
+.nft-card-title-cost {
+  background-color: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+  flex: 1 0 0;
+  p {
+    &:first-child {
+      @include Caption;
+    }
+  }
+}
+.nft-card-title-bid {
+  border-radius: 0 0 20px 20px;
+  background-color: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 8px;
+  flex: 1 0 0;
+  p {
+    &:first-child {
+      @include Caption;
+    }
+  }
+}
