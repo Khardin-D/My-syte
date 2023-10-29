@@ -1,0 +1,119 @@
+.marketplace {
+    // background-color: var(--bg-color-card);
+}
+.marcetplace-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 80px 0;
+    // background-color: var(--bg-color-card);
+}
+.marcetplace-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    p {
+        @include h2;
+    }
+    span {
+        @include body-text;
+    }
+}
+.marcetplace-filtr {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    input {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: transparent;
+        height: 60px;
+        width: 100%;
+        padding: 30px;
+        border-radius: 30px;
+        border: 1px solid var(--bg-color-card);
+    }
+    img {
+        position: absolute;
+        top: 17px;
+        right: 30px;
+    }
+}
+.marcetplace-box-two {
+    border-top: 2px solid var(--bg-color-card);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.marcetplace-box-nft {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    span {
+        @include h5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        padding: 0 30px;
+        position: relative;
+        height: 60px;
+        &::after {
+            content: "";
+            background: none repeat scroll 0 0 transparent;
+            bottom: 0;
+            right: 0;
+            left: 50%;
+            display: block;
+            height: 2px;
+            width: 0%;
+            position: absolute;
+            background-color: var(--bg-color-card);
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+
+        }
+        &:first-child:after {
+            width: 100%;
+            left: 0;
+        }
+        &:first-child {
+            position: relative;
+        }
+        &:first-child::before {
+            content: "302";
+            right: 170px;
+            @include body-textSpace;
+            position: absolute;
+            border-radius: 20px;
+            background-color: var(--color-cost-card);
+            padding: 5px 10px;
+        }
+        &:last-child::before {
+            content: "86";
+            right: 150px;
+            @include body-textSpace;
+            position: absolute;
+            border-radius: 20px;
+            background-color: var(--bg-color-card);
+            padding: 5px 10px;
+        }
+    }
+}
+.box-pading {
+    padding: 60px 0;
+    background-color: var(--bg-color-card)
+}
+
+.flex {
+    flex: 1 0 290px;
+    background-color: var(--bg-color);
+    &:hover {
+        scale: 1.1;
+        cursor: pointer;
+    }
+
+}

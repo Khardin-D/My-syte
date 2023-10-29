@@ -2,6 +2,7 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
 :root {
   --bg-color: #2B2B2B;
+  --bg-foot-color: #3b3b3b;
   --font-color: #fff;
   --buttom-color: #A259FF;
   --btn-bef: #9649fb;
@@ -21,11 +22,11 @@
 body,
 html {
   height: 100%;
+  max-width: 100%;
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: var(--font-color);
-  padding: 0 20px;
   background-color: var(--bg-color);
 }
 
@@ -36,6 +37,12 @@ body {
   font-weight: 400;
   line-height: 140%; /* 22.4px */
   font-style: normal;
+}
+
+footer {
+  background-color: var(--bg-foot-color);
+  width: 100%;
+  border-top: 2px solid var(--bg-color);
 }
 
 li {
@@ -160,25 +167,24 @@ input:focus {
   position: relative;
 }
 .header-nav ul li:last-child {
-  margin-right: 0px;
-  background-color: var(--buttom-color);
-  text-align: end;
-  border-radius: 20px;
-  padding-left: 40px;
+  padding-left: 50px;
 }
 .header-nav ul li:last-child::before {
   content: "";
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-image: url(./../../../assets/icons/User.svg);
   height: 20px;
   width: 20px;
   position: absolute;
-  right: 80px;
+  right: 85px;
   bottom: 14px;
 }
 .header-nav ul li:hover {
+  background-color: var(--buttom-color);
   cursor: pointer;
-  color: black;
+  border-radius: 20px;
 }
 
 .header {
@@ -305,6 +311,9 @@ input:focus {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 0px;
           flex: 1 0 0;
+  border-radius: 20px;
+  -webkit-box-shadow: rgb(72, 72, 72) 10px 10px 40px 0px;
+          box-shadow: rgb(72, 72, 72) 10px 10px 40px 0px;
 }
 .object-foto p {
   font-family: "Work Sans";
@@ -567,12 +576,16 @@ input:focus {
 }
 
 .artist-block1 {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   gap: 100px;
 }
 
@@ -1491,6 +1504,363 @@ input:focus {
   width: 20px;
 }
 
+.containerr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  gap: 60px;
+}
+
+.create-account-foto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0px;
+          flex: 1 0 0;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  background-image: url(../../../../assets/images/content1.png);
+  background-size: cover;
+  background-color: lightgray;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.create-account-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+  padding: 100px 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0px;
+          flex: 1 0 0;
+}
+
+.account-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  width: 460px;
+}
+.account-title p {
+  font-family: "Work Sans";
+  font-size: 51px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%; /* 56.1px */
+  text-transform: capitalize;
+}
+.account-title span {
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+}
+
+.account-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0px;
+          flex: 1 0 0;
+}
+.account-form input {
+  width: 330px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 46px;
+  padding: 16px 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  border-radius: 20px;
+  border: 1px solid var(--color-cost-card);
+  background: var(--font-color);
+  color: var(--bg-color);
+}
+.account-form button {
+  width: 330px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 46px;
+  padding: 0px 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  background-color: var(--buttom-color);
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.create-wallet-foto {
+  background-image: url(../../../../assets/images/wallet.png);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0px;
+          flex: 1 0 0;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  background-size: cover;
+  background-color: lightgray;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.mettalink-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 20px;
+  width: 320px;
+}
+.mettalink-form a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 72px;
+  padding: 0px 20px 0px 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  border-radius: 20px;
+  border: 1px solid var(--buttom-color);
+  background: var(--bg-color-card);
+  font-family: "Work Sans";
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 140%; /* 30.8px */
+  text-transform: capitalize;
+}
+.mettalink-form a img {
+  height: 40px;
+  width: 40px;
+}
+
+.marcetplace-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 30px;
+  padding: 80px 0;
+}
+
+.marcetplace-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 10px;
+}
+.marcetplace-title p {
+  font-family: "Work Sans";
+  font-size: 51px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%; /* 56.1px */
+  text-transform: capitalize;
+}
+.marcetplace-title span {
+  font-family: "Work Sans";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 160%; /* 35.2px */
+  text-transform: capitalize;
+}
+
+.marcetplace-filtr {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+.marcetplace-filtr input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: transparent;
+  height: 60px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 30px;
+  border: 1px solid var(--bg-color-card);
+}
+.marcetplace-filtr img {
+  position: absolute;
+  top: 17px;
+  right: 30px;
+}
+
+.marcetplace-box-two {
+  border-top: 2px solid var(--bg-color-card);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+
+.marcetplace-box-nft {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.marcetplace-box-nft span {
+  font-family: "Work Sans";
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 140%; /* 30.8px */
+  text-transform: capitalize;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  padding: 0 30px;
+  position: relative;
+  height: 60px;
+}
+.marcetplace-box-nft span::after {
+  content: "";
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  right: 0;
+  left: 50%;
+  display: block;
+  height: 2px;
+  width: 0%;
+  position: absolute;
+  background-color: var(--bg-color-card);
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+.marcetplace-box-nft span:first-child:after {
+  width: 100%;
+  left: 0;
+}
+.marcetplace-box-nft span:first-child {
+  position: relative;
+}
+.marcetplace-box-nft span:first-child::before {
+  content: "302";
+  right: 170px;
+  font-family: "Space Mono";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 22.4px */
+  position: absolute;
+  border-radius: 20px;
+  background-color: var(--color-cost-card);
+  padding: 5px 10px;
+}
+.marcetplace-box-nft span:last-child::before {
+  content: "86";
+  right: 150px;
+  font-family: "Space Mono";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 22.4px */
+  position: absolute;
+  border-radius: 20px;
+  background-color: var(--bg-color-card);
+  padding: 5px 10px;
+}
+
+.box-pading {
+  padding: 60px 0;
+  background-color: var(--bg-color-card);
+}
+
+.flex {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 290px;
+          flex: 1 0 290px;
+  background-color: var(--bg-color);
+}
+.flex:hover {
+  scale: 1.1;
+  cursor: pointer;
+}
+
 .footer-info-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1627,12 +1997,57 @@ input:focus {
   right: 0;
 }
 
+.title-cop-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+.title-cop-container span:first-child {
+  height: 5px;
+  border-radius: 50px;
+  background-color: var(--foot-color);
+}
+.title-cop-container span:last-child {
+  font-family: "Space Mono";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 13.2px */
+  color: #858584;
+}
+
 @media only screen and (max-width: 834px) {
   .container {
     width: 690px;
   }
   header {
     margin: 0 auto;
+  }
+  .header-nav {
+    display: none;
+  }
+  .header-row {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header-row::before {
+    content: "";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-image: url(../../assets/icons/Burger-Menu.svg);
+    height: 24px;
+    width: 24px;
+    float: right;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .container-header {
     padding: 20px 0;
@@ -1692,7 +2107,7 @@ input:focus {
     display: none;
   }
   .artist-colum {
-    padding: 40x 0;
+    padding: 40px 0;
   }
   .artist-button::before {
     content: "";
@@ -1753,6 +2168,9 @@ input:focus {
     font-weight: 700;
     line-height: 140%; /* 39.2px */
     text-transform: capitalize;
+  }
+  .colections-card-row {
+    gap: 25px;
   }
   .categories-card {
     width: 150px;
@@ -1882,6 +2300,7 @@ input:focus {
     gap: 16px;
   }
   .subscribe-title-folover input {
+    height: 50px;
     position: relative;
   }
   .subscribe-title-folover span {
@@ -1895,6 +2314,7 @@ input:focus {
     cursor: pointer;
   }
   .subscribe-title-folover span:last-child {
+    height: 50px;
     left: 0;
   }
   .footer-info-box {
@@ -1903,5 +2323,326 @@ input:focus {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 30px;
+  }
+  .containerr {
+    gap: 40px;
+  }
+  .create-account-foto,
+  .create-wallet-foto {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+  }
+  .create-account-form {
+    padding: 80px 0;
+  }
+  .account-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 325px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 40px;
+  }
+  .account-title p {
+    font-family: "Work Sans";
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 120%; /* 45.6px */
+    text-transform: capitalize;
+  }
+  .marketplace {
+    padding: 60px 0;
+  }
+  .marcetplace-title p {
+    font-family: "Work Sans";
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 120%; /* 45.6px */
+    text-transform: capitalize;
+  }
+  .marcetplace-title span {
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+    font-style: normal;
+  }
+  .marcetplace-box-nft span {
+    color: var(--White, #fff);
+    font-family: Work Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+  }
+  .marcetplace-box-nft span:first-child::before {
+    right: 90px;
+    bottom: 15px;
+  }
+  .marcetplace-box-nft span:last-child::before {
+    right: 70px;
+    bottom: 15px;
+  }
+  .box-pading {
+    gap: 30px;
+  }
+  .flex {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 0px;
+            flex: 1 0 0;
+  }
+  .flex:nth-child(n+3) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media only screen and (max-width: 376px) {
+  .header-logo ul li:first-child img {
+    height: 28px;
+    width: 28px;
+  }
+  .header-logo ul li:nth-child(2) img {
+    width: 150px;
+  }
+  .header-nav {
+    display: none;
+  }
+  .object {
+    padding: 40px 0;
+  }
+  .container {
+    width: 315px;
+  }
+  .object-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .object-text {
+    width: 315px;
+    gap: 40px;
+  }
+  .object-text h1 {
+    font-family: "Work Sans";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 39.2px */
+    text-transform: capitalize;
+  }
+  .object-text p {
+    text-align: start;
+  }
+  .object-buttons {
+    width: 100%;
+  }
+  .object-buttons a {
+    width: 100%;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .object-foto {
+    overflow: visible;
+  }
+  .colections {
+    padding: 40px 0;
+  }
+  .colections-title ul li:first-child {
+    font-family: "Work Sans";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 39.2px */
+    text-transform: capitalize;
+  }
+  .colections-card:nth-child(n+2) {
+    display: none;
+  }
+  .artist-colum {
+    padding: 40px 0;
+  }
+  .artist-block1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .atrist-title h3 {
+    font-family: "Work Sans";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 39.2px */
+    text-transform: capitalize;
+  }
+  .artist-button {
+    width: 100%;
+  }
+  .artist-button::before {
+    height: 20px;
+    width: 20px;
+  }
+  .categories-title span {
+    font-family: "Work Sans";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 39.2px */
+    text-transform: capitalize;
+  }
+  .categories-card-box {
+    gap: 15px;
+  }
+  .nft {
+    padding: 40px 0;
+  }
+  .nft-box {
+    gap: 30px;
+  }
+  .nft-box-title p {
+    font-family: "Work Sans";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 39.2px */
+    text-transform: capitalize;
+  }
+  .nft-box-button {
+    width: 100%;
+  }
+  .nft-card:last-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .magic {
+    padding: 120px 0 40px 0;
+    width: 375px;
+  }
+  .positions {
+    padding: 0;
+  }
+  .magic-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    gap: 30px;
+  }
+  .magic-artist-batton {
+    width: 100%;
+  }
+  .magic-artist-batton span {
+    width: 100%;
+  }
+  .magic-time {
+    width: 100%;
+  }
+  .works-title span:first-child {
+    font-family: "Work Sans";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 39.2px */
+    text-transform: capitalize;
+  }
+  .works-card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+  .works-card-foto {
+    width: 100px;
+    height: 100px;
+  }
+  .works-card-foto img {
+    width: 100px;
+    height: 100px;
+  }
+  .works-card-title span,
+  .works-card-title p {
+    text-align: left;
+  }
+  .subscribe-box {
+    padding: 0;
+    background-color: var(--bg-color);
+  }
+  .containerr {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 315px;
+    gap: 0;
+  }
+  .create-account-foto,
+  .create-wallet-foto {
+    height: 232px;
+  }
+  .create-account-form {
+    padding: 30px 0;
+    gap: 30px;
+  }
+  .account-title {
+    gap: 20px;
+  }
+  .account-form input {
+    width: 315px;
+  }
+  .account-form button {
+    width: 315px;
+  }
+  .footer-nft-info {
+    width: 296px;
+  }
+  .footer-info-box {
+    width: 315px;
+    background-color: var(--bg-foot-color);
+  }
+  .marketplace {
+    padding: 40px 0;
+  }
+  .marcetplace-title p {
+    font-family: "Space Mono";
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 140%; /* 39.2px */
+    text-transform: capitalize;
+  }
+  .marcetplace-box-nft span:first-child::before, .marcetplace-box-nft span:last-child::before {
+    display: none;
+  }
+  .box-pading {
+    padding: 40px 0;
+  }
+  .nft-card-image {
+    height: 238px;
   }
 }

@@ -1,0 +1,69 @@
+.create-account-box {
+}
+.containerr {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  gap: 60px;
+}
+.create-account-foto {
+  display: flex;
+  flex: 1 0 0;
+  align-self: stretch;
+  background-image: url(../../../../assets/images/content1.png);
+  background-size: cover;
+  background-color: lightgray;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+.create-account-form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 100px 0;
+  flex: 1 0 0;
+}
+.account-title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 460px;
+  p {
+    @include h2;
+  }
+  span {
+    align-self: stretch;
+  }
+}
+.account-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1 0 0;
+  input {
+    width: 330px;
+    display: flex;
+    height: 46px;
+    padding: 16px 20px;
+    align-items: center;
+    gap: 12px;
+    align-self: stretch;
+    border-radius: 20px;
+    border: 1px solid var(--color-cost-card);
+    background: var(--font-color);
+    color: var(--bg-color);
+  }
+  button {
+    width: 330px;
+    display: flex;
+    height: 46px;
+    padding: 0px 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    align-self: stretch;
+    background-color: var(--buttom-color);
+    border-radius: 20px;
+    margin-top: 20px;
+  }
+}

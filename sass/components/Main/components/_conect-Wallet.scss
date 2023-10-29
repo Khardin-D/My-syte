@@ -1,0 +1,33 @@
+.create-wallet-foto {
+  background-image: url(../../../../assets/images/wallet.png);
+  display: flex;
+  flex: 1 0 0;
+  align-self: stretch;
+  background-size: cover;
+  background-color: lightgray;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+.mettalink-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  width: 320px;
+  a {
+    display: flex;
+    height: 72px;
+    padding: 0px 20px 0px 40px;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+    border-radius: 20px;
+    border: 1px solid var(--buttom-color);
+    background: var(--bg-color-card);
+    @include h5;
+    img {
+      height: 40px;
+      width: 40px;
+    }
+  }
+}

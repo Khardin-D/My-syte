@@ -23,11 +23,11 @@
   <body>
     <div id="root">
       <nav>
-        <div class="header">
+        <section class="header">
           <div class="container-header">
             <div class="header-row">
               <div class="header-logo">
-                <ul>
+                <ul id="home">
                   <li><img src="./assets/icons/Storefront.svg" alt="" /></li>
                   <li>
                     <img src="./assets/icons/NFT Marketplace.svg" alt="" />
@@ -36,20 +36,20 @@
               </div>
               <div class="header-nav">
                 <ul>
-                  <li>Marcetplace</li>
-                  <li>Rankings</li>
-                  <li>Connect a wallet</li>
-                  <li>Sign Up</li>
+                  <li id="marcetplace">Marcetplace</li>
+                  <li id="rankings">Rankings</li>
+                  <li id="wallet">Connect a wallet</li>
+                  <li id="signUp">Sign Up</li>
                 </ul>
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </nav>
 
       <main>
         <!-- !  object -->
-        <div class="object">
+        <section class="object">
           <div class="container container-object">
             <div class="object-block">
               <!-- ! object-text -->
@@ -88,11 +88,11 @@
               <!-- ! object-foto -->
             </div>
           </div>
-        </div>
+        </section>
         <!-- !  object -->
 
         <!-- ! colections -->
-        <div class="colections">
+        <section class="colections">
           <div class="container">
             <div class="colections-title">
               <ul>
@@ -163,11 +163,11 @@
               </div>
             </div>
           </div>
-        </div>
+        </section>
         <!-- ! colections -->
 
         <!-- ! Top-Artist -->
-        <div class="top-artist">
+        <section class="top-artist">
           <div class="container">
             <div class="artist-colum">
               <div class="artist-block1">
@@ -334,11 +334,11 @@
               </div>
             </div>
           </div>
-        </div>
+        </section>
         <!-- ! Top-Artist -->
 
         <!-- ! Categories -->
-        <div class="categories">
+        <section class="categories">
           <div class="container">
             <div class="categories-title">
               <span>Browse Categories</span>
@@ -421,11 +421,11 @@
               </div>
             </div>
           </div>
-        </div>
+        </section>
         <!-- ! Categories -->
 
         <!-- ! NFT -->
-        <div class="nft">
+        <section class="nft">
           <div class="container">
             <div class="nft-box">
               <div class="nft-box-title">
@@ -504,11 +504,11 @@
               </div>
             </div>
           </div>
-        </div>
+        </section>
         <!-- ! NFT -->
 
         <!-- ! Magic -->
-        <div class="magic">
+        <section class="magic">
           <div class="container positions">
             <div class="magic-row">
               <div class="magic-artist">
@@ -542,11 +542,11 @@
               </div>
             </div>
           </div>
-        </div>
+        </section>
         <!-- ! Magic -->
 
         <!-- ! Magic -->
-        <div class="works">
+        <section class="works">
           <div class="container works-container">
             <div class="works-title">
               <span>How it works</span>
@@ -593,52 +593,63 @@
               </div>
             </div>
           </div>
-        </div>
+        </section>
         <!-- ! Magic -->
 
         <!-- ! Subscribe -->
-        <div class="subscribe">
+        <section class="subscribe">
           <div class="container subscribe-container">
             <div class="subscribe-box">
-              <div class="subscribe-image">
-              </div>
+              <div class="subscribe-image"></div>
               <div class="subscribe-title">
                 <div class="subscribe-title-name">
                   <span>Join our weekly digest</span>
-                  <span>Get exclusive promotions & updates straight to your inbox.</span>
+                  <span
+                    >Get exclusive promotions & updates straight to your
+                    inbox.</span
+                  >
                 </div>
                 <div class="subscribe-title-folover">
-                  <input type="text" name="" id="" Placeholder="Enter your email here">
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="Enter your email here"
+                  />
                   <span>Subscribe</span>
                 </div>
               </div>
-
             </div>
           </div>
-        </div>
+        </section>
         <!-- ! Subscribe -->
       </main>
       <footer>
         <div class="footer-info-box container-header">
-
-
           <div class="footer-nft">
             <div class="footer-nft-logo">
-              <img src="./assets/icons/Storefront.svg" alt="logo">
-              <img src="./assets/icons/NFT Marketplace.svg" alt="logo">
+              <img src="./assets/icons/Storefront.svg" alt="logo" />
+              <img src="./assets/icons/NFT Marketplace.svg" alt="logo" />
             </div>
             <div class="footer-nft-info">
               <p>NFT marketplace UI created with Anima for Figma.</p>
               <div class="footer-nft-community">
                 <p>Join our community</p>
                 <div class="footer-nft-community-icon">
-                  <img src="./assets/icons/DiscordLogo.svg" alt="diskord"><img src="./assets/icons/YoutubeLogo.svg" alt="Yootube"><img src="./assets/icons/TwitterLogo.svg" alt="twiter"><img src="./assets/icons/InstagramLogo.svg" alt="instagram">
+                  <img src="./assets/icons/DiscordLogo.svg" alt="diskord" /><img
+                    src="./assets/icons/YoutubeLogo.svg"
+                    alt="Yootube"
+                  /><img
+                    src="./assets/icons/TwitterLogo.svg"
+                    alt="twiter"
+                  /><img
+                    src="./assets/icons/InstagramLogo.svg"
+                    alt="instagram"
+                  />
                 </div>
               </div>
             </div>
           </div>
-
-
 
           <div class="footer-explore">
             <p>Explore</p>
@@ -651,21 +662,46 @@
             </div>
           </div>
 
-
           <div class="footer-subscribe">
             <p>Join our weekly digest</p>
             <div class="footer-subscribe-form">
-              <span>Get exclusive promotions & updates straight to your inbox.</span>
+              <span
+                >Get exclusive promotions & updates straight to your
+                inbox.</span
+              >
               <div class="subscribe-title-folover">
-                <input type="text" name="" id="" Placeholder="Enter your email here">
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Enter your email here"
+                />
                 <span>Subscribe</span>
               </div>
             </div>
           </div>
-
+        </div>
+        <div class="title-cop">
+          <div class="container-header footer-info-box title-cop-container">
+            <span></span>
+            <span>Ⓒ NFT Market. Use this template freely.</span>
+          </div>
         </div>
       </footer>
     </div>
   </body>
-  <script></script>
+  <script>
+   document.getElementById('signUp').addEventListener('click', function() {
+  window.location.href = 'Create-acaunt.html';
+});
+document.getElementById('wallet').addEventListener('click', function() {
+  window.location.href = 'Conect-Wallet.html';
+});
+document.getElementById('home').addEventListener('click', function() {
+  window.location.href = 'index.html';
+});
+document.getElementById('marcetplace').addEventListener('click', function() {
+  window.location.href = 'Marketplace.html';
+});
+  </script>
 </html>

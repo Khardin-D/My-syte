@@ -1,0 +1,242 @@
+@media only screen and (max-width: 376px) {
+  .header-logo {
+    ul {
+      li {
+        &:first-child {
+          img {
+            height: 28px;
+            width: 28px;
+          }
+        }
+        &:nth-child(2) {
+          img {
+            width: 150px;
+          }
+        }
+      }
+    }
+  }
+  .header-nav {
+    display: none;
+  }
+  .object {
+    padding: 40px 0;
+  }
+  .container {
+    width: 315px;
+  }
+  .object-block {
+    display: flex;
+    flex-direction: column;
+  }
+  .object-text {
+    width: 315px;
+    gap: 40px;
+    h1 {
+      @include h4Work;
+    }
+    p {
+      text-align: start;
+    }
+  }
+  .object-buttons {
+    width: 100%;
+    a {
+      width: 100%;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .object-foto {
+    overflow: visible;
+  }
+
+  .colections {
+    padding: 40px 0;
+  }
+  .colections-title {
+    ul {
+      li {
+        &:first-child {
+          @include h4Work;
+        }
+      }
+    }
+  }
+  .colections-card {
+    &:nth-child(n + 2) {
+      display: none;
+    }
+  }
+
+  .artist-colum {
+    padding: 40px 0;
+  }
+  .artist-block1 {
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+  }
+  .atrist-title {
+    h3 {
+      @include h4Work;
+    }
+  }
+  .artist-button {
+    width: 100%;
+    &::before {
+      height: 20px;
+      width: 20px;
+    }
+  }
+
+  .categories-title {
+    span {
+      @include h4Work;
+    }
+  }
+  .categories-card-box {
+    gap: 15px;
+  }
+  .nft {
+    padding: 40px 0;
+  }
+  .nft-box {
+    gap: 30px;
+  }
+  .nft-box-title {
+    p {
+      @include h4Work;
+    }
+  }
+  .nft-box-button {
+    width: 100%;
+  }
+  .nft-card {
+    &:last-child {
+      display: flex;
+    }
+  }
+
+  .magic {
+    padding: 120px 0 40px 0;
+    width: 375px;
+  }
+  .positions {
+    padding: 0;
+  }
+  .magic-row {
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+  }
+  .magic-artist-batton {
+    width: 100%;
+    span {
+      width: 100%;
+    }
+  }
+  .magic-time {
+    width: 100%;
+  }
+  .works-title {
+    span {
+      &:first-child {
+        @include h4Work;
+      }
+    }
+  }
+
+  .works-card {
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+  .works-card-foto {
+    width: 100px;
+    height: 100px;
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  .works-card-title {
+    span,
+    p {
+      text-align: left;
+    }
+  }
+  .subscribe-box {
+    padding: 0;
+    background-color: var(--bg-color);
+  }
+
+  // !           Page - Acount create                    !
+
+  .containerr {
+    flex-direction: column;
+    width: 315px;
+    gap: 0;
+  }
+  .create-account-foto,
+  .create-wallet-foto {
+    height: 232px;
+  }
+  .create-account-form {
+    padding: 30px 0;
+    gap: 30px;
+  }
+  .account-title {
+    gap: 20px;
+  }
+  .account-form {
+    input {
+      width: 315px;
+    }
+    button {
+      width: 315px;
+    }
+  }
+  .footer-nft-info {
+    width: 296px;
+  }
+  .footer-info-box {
+    width: 315px;
+    background-color: var(--bg-foot-color)
+  }
+    // !           Page -  Marketplace                    !
+
+    .marketplace {
+      padding: 40px 0;
+    }
+    .container {
+    }
+    .marcetplace-box {
+    }
+    .marcetplace-title {
+      p {
+        @include h4;
+      }
+    }
+    .marcetplace-filtr {
+    }
+    .marcetplace-box-two {
+    }
+    .marcetplace-box-nft {
+      span {
+
+        &:first-child::before,
+        &:last-child::before {
+          display: none;
+        }
+      }
+    }
+    .box-pading {
+      padding: 40px 0;
+    }
+    .nft-card-image {
+      height: 238px;
+    }
+}

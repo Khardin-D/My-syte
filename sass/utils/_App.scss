@@ -7,10 +7,11 @@
 body,
 html {
   height: 100%;
+  max-width: 100%;
   width: 100%;
   box-sizing: border-box;
   color: var(--font-color);
-  padding: 0 20px;
+  // padding: 0 20px;
   background-color: var(--bg-color);
 }
 body {
@@ -20,6 +21,11 @@ body {
   font-weight: 400;
   line-height: 140%; /* 22.4px */
   font-style: normal;
+}
+footer {
+  background-color: var(--bg-foot-color);
+  width: 100%;
+  border-top: 2px solid var(--bg-color);
 }
 
 li {
@@ -167,6 +173,21 @@ input {
   line-height: 160%; /* 35.2px */
   text-transform: capitalize;
 }
+@mixin body-text16 {
+  font-family: "Work Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%; /* 22.4px */
+  font-style: normal;
+}
+
+@mixin body-textSpace {
+  font-family: "Space Mono";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 22.4px */
+}
 
 @mixin Caption {
   font-family: "Space Mono";
@@ -204,7 +225,6 @@ input {
 
 .categories-card {
   &:hover {
-
     scale: 1.1;
   }
 }
