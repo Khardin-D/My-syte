@@ -91,7 +91,7 @@ input {
 
 @mixin text-600 {
   color: var(--White, #fff);
-  font-family: Work Sans;
+  font-family: "Work Sans";
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -221,6 +221,10 @@ input {
   justify-content: center;
   align-items: center;
   gap: 12px;
+}
+
+@mixin none {
+  display: none;
 }
 
 .categories-card {

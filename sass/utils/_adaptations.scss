@@ -326,10 +326,66 @@
     gap: 30px;
   }
   .flex {
-    flex: 1 0 0;
+    flex: 1 0 330px;
     &:nth-child(n + 3) {
       display: flex;
     }
   }
 
+  //!           Page - Rankings
+
+  .profile-box-two {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+  .title-box {
+    order: 1;
+    flex: 1 0 0;
+    h3 {
+      @include h3;
+    }
+    span {
+      &:first-child {
+        @include h5Space;
+      }
+      &:last-child {
+        @include body-text16;
+      }
+    }
+  }
+  .box-bio {
+    p {
+      @include body-text16;
+    }
+    span {
+      @include body-text16;
+    }
+  }
+
+  .box-links {
+    p {
+      @include body-text16;
+    }
+  }
+  .spans {
+    display: flex;
+    gap: 10px;
+    span {
+      display: flex;
+      height: 24px;
+      width: 24px;
+    }
+  }
+  .button-box {
+    order: 2;
+  }
+  .select-box {
+    span {
+      @include text-600;
+      &::before {
+        @include Caption;
+      }
+    }
+  }
 }

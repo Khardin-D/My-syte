@@ -1857,8 +1857,256 @@ input:focus {
   background-color: var(--bg-color);
 }
 .flex:hover {
-  scale: 1.1;
+  scale: 0.9;
   cursor: pointer;
+}
+
+.profile {
+  height: 320px;
+  background-image: url(../../../../assets/images/bg-profile.png);
+  background-repeat: no-repeat;
+  background-color: lightgray;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.container-profile {
+  position: relative;
+}
+
+.profile-box {
+  position: absolute;
+  left: 0;
+  top: 250px;
+}
+.profile-box img {
+  width: 120px;
+  height: 120px;
+  border-radius: 20px;
+  border: 2px solid var(--bg-color);
+}
+
+.profile-two {
+  padding: 95px 0 40px 0;
+}
+
+.profile-box-two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 100px;
+}
+
+.title-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 600px;
+          flex: 1 0 600px;
+  gap: 30px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.title-box h3 {
+  font-family: "Work Sans";
+  font-size: 51px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%; /* 56.1px */
+  text-transform: capitalize;
+}
+
+.box-folowers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.followers-one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.followers-one span:first-child {
+  font-family: "Space Mono";
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 140%; /* 39.2px */
+  text-transform: capitalize;
+}
+.followers-one span:last-child {
+  font-family: "Work Sans";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 160%; /* 35.2px */
+  text-transform: capitalize;
+}
+
+.box-bio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+.box-bio p {
+  font-family: "Space Mono";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 35.2px */
+  text-transform: capitalize;
+  color: var(--color-cost-card);
+}
+.box-bio span {
+  font-family: "Work Sans";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 160%; /* 35.2px */
+  text-transform: capitalize;
+}
+
+.box-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+.box-links p {
+  font-family: "Space Mono";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 35.2px */
+  text-transform: capitalize;
+  color: var(--color-cost-card);
+}
+
+.button-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0px;
+          flex: 1 0 0;
+  gap: 20px;
+}
+.button-box a {
+  padding: 0 50px;
+  height: 60px;
+  border: 2px solid var(--buttom-color);
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+}
+.button-box a:hover {
+  background-color: var(--btn-bef);
+}
+.button-box a:first-child {
+  width: 186px;
+}
+.button-box a:first-child::before {
+  content: url(../../../../assets/icons/Copy.svg);
+  display: block;
+}
+.button-box a:last-child {
+  width: 145px;
+}
+.button-box a:last-child::before {
+  content: url(../../../../assets/icons/Plus.svg);
+  display: block;
+}
+
+hr {
+  border: 1px solid var(--bg-color-card);
+}
+
+.section-card {
+  margin-top: 5px;
+  background-color: var(--bg-color-card);
+}
+
+.select-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 10px;
+}
+.select-box span {
+  width: 350px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  font-family: "Work Sans";
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 140%; /* 30.8px */
+  text-transform: capitalize;
+}
+.select-box span:hover {
+  border-bottom: 2px solid var(--bg-color-card);
+}
+.select-box span:first-child::before {
+  content: "302";
+}
+.select-box span:nth-child(2)::before {
+  content: "67";
+}
+.select-box span:last-child::before {
+  content: "4";
+}
+.select-box span:before {
+  font-family: "Space Mono";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 22.4px */
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+  background-color: var(--bg-color-card);
 }
 
 .footer-info-box {
@@ -2190,7 +2438,7 @@ input:focus {
   .categories-card-title span {
     white-space: nowrap;
     color: var(--White, #fff);
-    font-family: Work Sans;
+    font-family: "Work Sans";
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -2212,7 +2460,7 @@ input:focus {
   }
   .nft-box-button span {
     color: var(--White, #fff);
-    font-family: Work Sans;
+    font-family: "Work Sans";
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -2253,7 +2501,7 @@ input:focus {
   }
   .works-card-title span {
     color: var(--White, #fff);
-    font-family: Work Sans;
+    font-family: "Work Sans";
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -2375,7 +2623,7 @@ input:focus {
   }
   .marcetplace-box-nft span {
     color: var(--White, #fff);
-    font-family: Work Sans;
+    font-family: "Work Sans";
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -2394,13 +2642,108 @@ input:focus {
   }
   .flex {
     -webkit-box-flex: 1;
-        -ms-flex: 1 0 0px;
-            flex: 1 0 0;
+        -ms-flex: 1 0 330px;
+            flex: 1 0 330px;
   }
   .flex:nth-child(n+3) {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .profile-box-two {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 30px;
+  }
+  .title-box {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 0px;
+            flex: 1 0 0;
+  }
+  .title-box h3 {
+    font-family: "Work Sans";
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 120%; /* 45.6px */
+    text-transform: capitalize;
+  }
+  .title-box span:first-child {
+    font-family: "Space Mono";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%; /* 35.2px */
+    text-transform: capitalize;
+  }
+  .title-box span:last-child {
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+    font-style: normal;
+  }
+  .box-bio p {
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+    font-style: normal;
+  }
+  .box-bio span {
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+    font-style: normal;
+  }
+  .box-links p {
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+    font-style: normal;
+  }
+  .spans {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+  }
+  .spans span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 24px;
+    width: 24px;
+  }
+  .button-box {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .select-box span {
+    color: var(--White, #fff);
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+  }
+  .select-box span::before {
+    font-family: "Space Mono";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 13.2px */
+    color: #858584;
   }
 }
 @media only screen and (max-width: 376px) {
@@ -2644,5 +2987,37 @@ input:focus {
   }
   .nft-card-image {
     height: 238px;
+  }
+  .profile {
+    height: 250px;
+  }
+  .profile-box {
+    top: 180px;
+    left: 100px;
+  }
+  .title-box h3 {
+    font-family: "Space Mono";
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 140%; /* 39.2px */
+    text-transform: capitalize;
+  }
+  .button-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+  }
+  .button-box a:first-child, .button-box a:last-child {
+    width: 100%;
+    color: var(--font-color);
+    font-weight: 600;
+  }
+  .select-box span {
+    padding: 0 10px;
+  }
+  .select-box span::before {
+    display: none;
   }
 }

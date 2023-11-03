@@ -1,0 +1,40 @@
+.section-card {
+  margin-top: 5px;
+  background-color: var(--bg-color-card);
+}
+.container {
+}
+.select-box {
+  display: flex;
+  padding-top: 10px;
+  span {
+    width: 350px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    @include h5;
+    &:hover {
+      border-bottom: 2px solid var(--bg-color-card);
+    }
+    &:first-child::before {
+      content: "302";
+    }
+    &:nth-child(2)::before {
+      content: "67";
+    }
+    &:last-child::before {
+      content: "4";
+    }
+    &:before {
+      @include body-textSpace;
+      order: 2;
+      display: flex;
+      padding: 5px 10px;
+      align-items: center;
+      border-radius: 20px;
+      background-color: var(--bg-color-card);
+    }
+  }
+}

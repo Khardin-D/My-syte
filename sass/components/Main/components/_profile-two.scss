@@ -1,0 +1,91 @@
+.profile-two {
+  padding: 95px 0 40px 0;
+}
+.profile-box-two {
+  display: flex;
+  gap: 100px;
+}
+.title-box {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 600px;
+  gap: 30px;
+  align-items: flex-start;
+  h3 {
+    @include h2;
+  }
+}
+.box-folowers {
+  display: flex;
+  gap: 20px;
+}
+.followers-one {
+  display: flex;
+  flex-direction: column;
+  span {
+    &:first-child {
+      @include h4;
+    }
+    &:last-child {
+      @include body-text;
+    }
+  }
+}
+
+.box-bio {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  p {
+    @include h5Space;
+    color: var(--color-cost-card);
+  }
+  span {
+    @include body-text;
+  }
+}
+.box-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  p {
+    @include h5Space;
+    color: var(--color-cost-card);
+  }
+}
+.button-box {
+  display: flex;
+  flex: 1 0 0;
+  gap: 20px;
+  a {
+    padding: 0 50px;
+    height: 60px;
+    border: 2px solid var(--buttom-color);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    &:hover {
+      background-color: var(--btn-bef);
+    }
+    &:first-child {
+      width: 186px;
+      &::before {
+        content: url(../../../../assets/icons/Copy.svg);
+        display: block;
+      }
+    }
+
+    &:last-child {
+      width: 145px;
+      &::before {
+        content: url(../../../../assets/icons/Plus.svg);
+        display: block;
+      }
+    }
+  }
+}
+hr {
+  border: 1px solid var(--bg-color-card);
+}
