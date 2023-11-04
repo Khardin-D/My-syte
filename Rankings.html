@@ -36,8 +36,28 @@
               </div>
               <div class="header-nav">
                 <ul>
+                  <li id="marcetplace2">Marcetplace</li>
+                  <li id="Rankings2">Rankings</li>
+                  <li id="wallet2">Connect a wallet</li>
+                  <li id="signUp2">Sign Up</li>
+                </ul>
+              </div>
+              <div class="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+
+              <div class="menu">
+                <ul>
+                  <video
+                    src="./assets/video/tunnel.mp4"
+                    autoplay
+                    muted
+                    loop
+                  ></video>
                   <li id="marcetplace">Marcetplace</li>
-                  <li id="rankings">Rankings</li>
+                  <li id="Rankings">Rankings</li>
                   <li id="wallet">Connect a wallet</li>
                   <li id="signUp">Sign Up</li>
                 </ul>
@@ -397,6 +417,9 @@
     document.getElementById("home").addEventListener("click", function () {
       window.location.href = "index.html";
     });
+    document.getElementById("Rankings").addEventListener("click", function () {
+      window.location.href = "Rankings.html";
+    });
     document
       .getElementById("marcetplace")
       .addEventListener("click", function () {
@@ -407,5 +430,26 @@
     if (window.innerWidth <= 834) {
       element.parentNode.removeChild(element);
     }
+    let menuBtn = document.querySelector(".menu-btn");
+    let menu = document.querySelector(".menu");
+
+    menuBtn.addEventListener("click", function () {
+      menuBtn.classList.toggle("active");
+      menu.classList.toggle("active");
+    });
+    document.getElementById("signUp2").addEventListener("click", function () {
+      window.location.href = "Create-acaunt.html";
+    });
+    document.getElementById("wallet2").addEventListener("click", function () {
+      window.location.href = "Conect-Wallet.html";
+    });
+    document.getElementById("Rankings2").addEventListener("click", function () {
+      window.location.href = "Rankings.html";
+    });
+    document
+      .getElementById("marcetplace2")
+      .addEventListener("click", function () {
+        window.location.href = "Marketplace.html";
+      });
   </script>
 </html>

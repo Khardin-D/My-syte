@@ -18,10 +18,12 @@
 .box-folowers {
   display: flex;
   gap: 20px;
+  width: 510px;
 }
 .followers-one {
   display: flex;
   flex-direction: column;
+  flex: 1 0 0;
   span {
     &:first-child {
       @include h4;

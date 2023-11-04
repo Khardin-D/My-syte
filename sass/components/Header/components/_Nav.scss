@@ -1,60 +1,71 @@
+// nav {
+//   position: fixed;
+//   z-index: 100;
+// }
 .header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 60px;
+}
+
+.header-logo {
+  ul {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    height: 60px;
-  }
-  
-  .header-logo {
-    ul {
-      display: flex;
-      align-items: center;
-      li {
-        &:first-child {
-          margin-right: 12px;
-        }
-        &:hover {
-          cursor: pointer;
-        }
+    li {
+      &:first-child {
+        margin-right: 12px;
+      }
+      &:hover {
+        cursor: pointer;
       }
     }
   }
-  .header-nav {
-    ul {
+}
+.header-nav {
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li {
+      @include nav-text;
       display: flex;
       justify-content: center;
       align-items: center;
-      li {
-        @include nav-text;
+
+      height: 46px;
+      padding: 0px 20px;
+      gap: 12px;
+
+      position: relative;
+      &:last-child {
+        padding-left: 50px;
+      }
+      &:last-child::before {
+        content: "";
         display: flex;
-        justify-content: center;
-        align-items: center;
-  
-        height: 46px;
-        padding: 0px 20px;
-        gap: 12px;
-  
-        position: relative;
-        &:last-child{
-          padding-left: 50px;
-        }
-        &:last-child::before {
-          content: "";
-          display: flex;
-          background-image: url(./../../../assets/icons/User.svg);
-          height: 20px;
-          width: 20px;
-          position: absolute;
-          right: 85px;
-          bottom: 14px;
-        }
-        &:hover {
-          background-color: var(--buttom-color);
-          cursor: pointer;
-          border-radius: 20px;
-        }
+        background-image: url(./../../../assets/icons/User.svg);
+        height: 20px;
+        width: 20px;
+        position: absolute;
+        right: 85px;
+        bottom: 14px;
+      }
+      &:hover {
+        // background-color: var(--buttom-color);
+        background: var(--gradient);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        cursor: pointer;
+        border-radius: 20px;
       }
     }
   }
+}
+.menu,
+.menu-btn {
+  display: none;
+}

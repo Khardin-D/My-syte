@@ -19,6 +19,13 @@
   .header-nav {
     display: none;
   }
+  .menu {
+    ul {
+      li {
+        @include h5Space;
+      }
+    }
+  }
   .object {
     padding: 40px 0;
   }
@@ -178,11 +185,24 @@
   .containerr {
     flex-direction: column;
     width: 315px;
+    margin: 0 auto;
     gap: 0;
   }
   .create-account-foto,
   .create-wallet-foto {
     height: 232px;
+  }
+  .create-account-foto {
+    background-image: none;
+    background-size: cover;
+    background-color: transparent;
+    background-repeat: no-repeat;
+
+    video {
+      display: flex;
+      width: 100%;
+      height: 100%;
+    }
   }
   .create-account-form {
     padding: 30px 0;
@@ -224,8 +244,13 @@
       }
     }
   }
+  .flex {
+    flex: 1 0 315px;
+  }
   .box-pading {
-    padding: 40px 0;
+    padding: 40px 40px;
+    margin-left: -40px;
+    margin-right: -40px;
   }
   .nft-card-image {
     height: 238px;
@@ -244,6 +269,9 @@
     h3 {
       @include h4;
     }
+  }
+  .box-folowers {
+    width: 100%;
   }
   .button-box {
     flex-direction: column;
