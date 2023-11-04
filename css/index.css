@@ -1855,8 +1855,10 @@ input:focus {
 }
 
 .box-pading {
-  padding: 60px 0;
+  padding: 60px 200px;
   background-color: var(--bg-color-card);
+  margin-right: -200px;
+  margin-left: -200px;
 }
 
 .flex {
