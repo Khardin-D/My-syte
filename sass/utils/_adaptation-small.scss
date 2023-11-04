@@ -32,6 +32,11 @@
   .container {
     width: 315px;
   }
+  .object-text {
+    transform: translateX(0);
+    animation: none;
+  }
+
   .object-block {
     display: flex;
     flex-direction: column;

@@ -16,6 +16,35 @@
   gap: 30px;
 }
 
+.categories-card {
+  animation: card 1s ease-in-out forwards 10s;
+  opacity: 0;
+  &:nth-child(1) {
+    animation-delay: 15s;
+  }
+  &:nth-child(2) {
+    animation-delay: 15.2s;
+  }
+  &:nth-child(3) {
+    animation-delay: 15.4s;
+  }
+  &:nth-child(4) {
+    animation-delay: 15.6s;
+  }
+  &:nth-child(5) {
+    animation-delay: 15.8s;
+  }
+  &:nth-child(6) {
+    animation-delay: 16s;
+  }
+  &:nth-child(7) {
+    animation-delay: 16.2s;
+  }
+  &:nth-child(8) {
+    animation-delay: 16.4s;
+  }
+}
+
 .categories-card-foto {
   display: flex;
   justify-content: center;

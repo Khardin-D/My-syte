@@ -89,6 +89,15 @@
     top: 18px;
   }
 }
+.shaker1 {
+  animation: shake1 10s ease-in-out infinite alternate;
+}
+.shaker2 {
+  animation: shake2 14s ease-in-out infinite alternate;
+}
+.shaker3 {
+  animation: shake3 18s ease-in-out infinite alternate;
+}
 
 .atist-avatar {
   display: flex;

@@ -228,3 +228,16 @@ input {
     scale: 1.1;
   }
 }
+
+.colections-card,
+.artist-card,
+.categories-card,
+.nft-card,
+.works-card {
+  cursor: pointer;
+}
+
+.object-text {
+  animation: hiden 2s 1s forwards;
+  transform: translateX(110%);
+}
