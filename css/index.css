@@ -2943,7 +2943,7 @@ hr {
     color: #858584;
   }
 }
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 490px) {
   .header-logo ul li:first-child img {
     height: 28px;
     width: 28px;
