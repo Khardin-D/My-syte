@@ -87,8 +87,8 @@
             </div>
             <div class="marcetplace-box-two">
               <div class="marcetplace-box-nft">
-                <span>NFTs</span>
-                <span>Collections</span>
+                <span id="span1" onclick="showCards('flex')">NFTs</span>
+                <span id="span2" onclick="showCards('flex2')">Collections</span>
               </div>
               <div class="nft-card-box box-pading">
                 <div class="nft-card flex">
@@ -352,6 +352,126 @@
                     </div>
                   </div>
                 </div>
+                <div class="colections-card flex2">
+                  <div class="colections-card-foto foto1 foto"></div>
+
+                  <div class="colections-card-row-minifoto row">
+                    <div class="colections-card-minifoto minifoto1 foto"></div>
+                    <div class="colections-card-minifoto minifoto2 foto"></div>
+                    <div
+                      class="colections-card-folovers colections-card-minifoto"
+                    >
+                      <h5>1025+</h5>
+                    </div>
+                  </div>
+
+                  <div class="colections-card-name-row row">
+                    <div class="colections-card-name">
+                      <h5 class="h5">DSGN Animals</h5>
+                    </div>
+                    <div class="colections-card-acount name">Mr Fox</div>
+                  </div>
+                </div>
+                <div class="colections-card flex2">
+                  <div class="colections-card-foto foto1 foto"></div>
+
+                  <div class="colections-card-row-minifoto row">
+                    <div class="colections-card-minifoto minifoto1 foto"></div>
+                    <div class="colections-card-minifoto minifoto2 foto"></div>
+                    <div
+                      class="colections-card-folovers colections-card-minifoto"
+                    >
+                      <h5>1025+</h5>
+                    </div>
+                  </div>
+
+                  <div class="colections-card-name-row row">
+                    <div class="colections-card-name">
+                      <h5 class="h5">DSGN Animals</h5>
+                    </div>
+                    <div class="colections-card-acount name">Mr Fox</div>
+                  </div>
+                </div>
+                <div class="colections-card flex2">
+                  <div class="colections-card-foto foto1 foto"></div>
+
+                  <div class="colections-card-row-minifoto row">
+                    <div class="colections-card-minifoto minifoto1 foto"></div>
+                    <div class="colections-card-minifoto minifoto2 foto"></div>
+                    <div
+                      class="colections-card-folovers colections-card-minifoto"
+                    >
+                      <h5>1025+</h5>
+                    </div>
+                  </div>
+
+                  <div class="colections-card-name-row row">
+                    <div class="colections-card-name">
+                      <h5 class="h5">DSGN Animals</h5>
+                    </div>
+                    <div class="colections-card-acount name">Mr Fox</div>
+                  </div>
+                </div>
+                <div class="colections-card flex2">
+                  <div class="colections-card-foto foto1 foto"></div>
+
+                  <div class="colections-card-row-minifoto row">
+                    <div class="colections-card-minifoto minifoto1 foto"></div>
+                    <div class="colections-card-minifoto minifoto2 foto"></div>
+                    <div
+                      class="colections-card-folovers colections-card-minifoto"
+                    >
+                      <h5>1025+</h5>
+                    </div>
+                  </div>
+
+                  <div class="colections-card-name-row row">
+                    <div class="colections-card-name">
+                      <h5 class="h5">DSGN Animals</h5>
+                    </div>
+                    <div class="colections-card-acount name">Mr Fox</div>
+                  </div>
+                </div>
+                <div class="colections-card flex2">
+                  <div class="colections-card-foto foto1 foto"></div>
+
+                  <div class="colections-card-row-minifoto row">
+                    <div class="colections-card-minifoto minifoto1 foto"></div>
+                    <div class="colections-card-minifoto minifoto2 foto"></div>
+                    <div
+                      class="colections-card-folovers colections-card-minifoto"
+                    >
+                      <h5>1025+</h5>
+                    </div>
+                  </div>
+
+                  <div class="colections-card-name-row row">
+                    <div class="colections-card-name">
+                      <h5 class="h5">DSGN Animals</h5>
+                    </div>
+                    <div class="colections-card-acount name">Mr Fox</div>
+                  </div>
+                </div>
+                <div class="colections-card flex2">
+                  <div class="colections-card-foto foto1 foto"></div>
+
+                  <div class="colections-card-row-minifoto row">
+                    <div class="colections-card-minifoto minifoto1 foto"></div>
+                    <div class="colections-card-minifoto minifoto2 foto"></div>
+                    <div
+                      class="colections-card-folovers colections-card-minifoto"
+                    >
+                      <h5>1025+</h5>
+                    </div>
+                  </div>
+
+                  <div class="colections-card-name-row row">
+                    <div class="colections-card-name">
+                      <h5 class="h5">DSGN Animals</h5>
+                    </div>
+                    <div class="colections-card-acount name">Mr Fox</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -454,14 +574,19 @@
     document.getElementById("wallet2").addEventListener("click", function () {
       window.location.href = "Conect-Wallet.html";
     });
-
-    document
-      .getElementById("marcetplace2")
-      .addEventListener("click", function () {
-        window.location.href = "Marketplace.html";
+    function showCards(className) {
+      // Скрываем все элементы с классами .flex и .flex2
+      const allFlex = document.querySelectorAll(".flex, .flex2");
+      allFlex.forEach((card) => {
+        card.style.display = "none";
       });
-    document.getElementById("Rankings2").addEventListener("click", function () {
-      window.location.href = "Rankings.html";
-    });
+
+      // Отображаем элементы, которые соответствуют выбранному классу
+      const selectedFlex = document.querySelectorAll("." + className);
+      selectedFlex.forEach((card) => {
+        card.style.display = "flex";
+      });
+    }
+    showCards("flex");
   </script>
 </html>
