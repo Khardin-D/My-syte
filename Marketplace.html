@@ -36,10 +36,10 @@
               </div>
               <div class="header-nav">
                 <ul>
-                  <li id="marcetplace2">Marcetplace</li>
-                  <li id="Rankings2">Rankings</li>
-                  <li id="wallet2">Connect a wallet</li>
-                  <li id="signUp2">Sign Up</li>
+                  <li id="marcetplace">Marcetplace</li>
+                  <li id="Rankings">Rankings</li>
+                  <li id="wallet">Connect a wallet</li>
+                  <li id="signUp">Sign Up</li>
                 </ul>
               </div>
               <div class="menu-btn">
@@ -54,10 +54,10 @@
                     <source src="./assets/video/tunnel.mp4" />
                     <source src="./assets/video/tunnel2.webm" />
                   </video>
-                  <li id="marcetplace">Marcetplace</li>
-                  <li id="Rankings">Rankings</li>
-                  <li id="wallet">Connect a wallet</li>
-                  <li id="signUp">Sign Up</li>
+                  <li id="marcetplace2">Marcetplace</li>
+                  <li id="Rankings2">Rankings</li>
+                  <li id="wallet2">Connect a wallet</li>
+                  <li id="signUp2">Sign Up</li>
                 </ul>
               </div>
             </div>
@@ -579,11 +579,13 @@
       window.location.href = "Conect-Wallet.html";
     });
     function showCards(className) {
+      // Скрываем все элементы с классами .flex и .flex2
       const allFlex = document.querySelectorAll(".flex, .flex2");
       allFlex.forEach((card) => {
         card.style.display = "none";
       });
 
+      // Отображаем элементы, которые соответствуют выбранному классу
       const selectedFlex = document.querySelectorAll("." + className);
       selectedFlex.forEach((card) => {
         card.style.display = "flex";
@@ -592,15 +594,19 @@
     showCards("flex");
     const elements = document.querySelectorAll(".on");
 
+    // Добавляем обработчик события на каждый элемент
     elements.forEach((element) => {
       element.addEventListener("click", () => {
+        // Добавляем класс "border-active" для выделения элемента
         element.classList.add("active");
       });
     });
     const elementc = document.querySelectorAll(".on");
 
+    // Добавляем обработчик события на каждый элемент
     elementc.forEach((element) => {
       element.addEventListener("click", () => {
+        // Убираем класс "border-active" у всех элементов
         elementc.forEach((el) => {
           el.classList.remove("active");
         });
