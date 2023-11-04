@@ -100,7 +100,7 @@
           display: flex;
           width: 30px;
           height: 30px;
-          background-image: url(../../assets/icons/arrow.svg);
+          background-image: url(../assets/icons/arrow.svg);
           @include foto;
           background-color: transparent;
           position: absolute;
@@ -263,7 +263,6 @@
   }
   .categories-card-foto {
     background: lightgray;
-    // opacity: 0.6;
     img {
       filter: blur(5px);
       width: 150px;
@@ -400,7 +399,7 @@
   .create-account-foto,
   .create-wallet-foto {
     flex-basis: auto;
-    background-image: url(../../../../assets/images/content1.png);
+    background-image: url(../assets/images/content1.png);
     background-size: cover;
     background-color: lightgray;
     background-repeat: no-repeat;

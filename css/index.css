@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
 :root {
   --bg-color: #2b2b2b;
@@ -38,7 +37,7 @@ body {
   font-family: "Work Sans";
   font-size: 16px;
   font-weight: 400;
-  line-height: 140%; /* 22.4px */
+  line-height: 140%;
   font-style: normal;
 }
 
@@ -74,8 +73,8 @@ button {
 
 a,
 input {
-  text-decoration: none; /* Убирает подчеркивание по умолчанию */
-  color: black; /* Устанавливает цвет текста на наследованный цвет */
+  text-decoration: none;
+  color: black;
   cursor: pointer;
 }
 a:focus,
@@ -154,7 +153,7 @@ input:focus {
   font-family: "Work Sans";
   font-size: 16px;
   font-weight: 400;
-  line-height: 140%; /* 22.4px */
+  line-height: 140%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -177,7 +176,7 @@ input:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-image: url(./../../../assets/icons/User.svg);
+  background-image: url(../assets/icons/User.svg);
   height: 20px;
   width: 20px;
   position: absolute;
@@ -245,14 +244,14 @@ input:focus {
   font-family: "Work Sans";
   font-size: 67px;
   font-weight: 600;
-  line-height: 110%; /* 73.7px */
+  line-height: 110%;
   text-transform: capitalize;
 }
 .object-text p {
   font-family: "Work Sans";
   font-size: 22px;
   font-weight: 400;
-  line-height: 160%; /* 35.2px */
+  line-height: 160%;
   text-transform: capitalize;
 }
 
@@ -266,7 +265,7 @@ input:focus {
   font-family: "Work Sans";
   font-size: 16px;
   font-weight: 400;
-  line-height: 140%; /* 22.4px */
+  line-height: 140%;
 }
 
 .object-folovers {
@@ -296,14 +295,14 @@ input:focus {
   font-family: "Space Mono";
   font-size: 28px;
   font-weight: 700;
-  line-height: 140%; /* 39.2px */
+  line-height: 140%;
   text-transform: capitalize;
 }
 .object-folovers ul li:nth-child(n+4):nth-child(-n+6) {
   font-family: "Work Sans";
   font-size: 22px;
   font-weight: 400;
-  line-height: 160%; /* 35.2px */
+  line-height: 160%;
   text-transform: capitalize;
 }
 
@@ -330,7 +329,7 @@ input:focus {
   font-family: "Work Sans";
   font-size: 22px;
   font-weight: 600;
-  line-height: 140%; /* 30.8px */
+  line-height: 140%;
   text-transform: capitalize;
 }
 
@@ -347,7 +346,7 @@ input:focus {
   display: block;
   height: 24px;
   width: 24px;
-  background-image: url(../../../../assets/images/Avatar\ Placeholder.png);
+  background-image: url(../assets/images/Avatar\ Placeholder.png);
   position: absolute;
   right: 90px;
   bottom: 1px;
@@ -396,7 +395,7 @@ input:focus {
   display: block;
   height: 20px;
   width: 20px;
-  background-image: url(../../../../assets/icons/RocketLaunch.svg);
+  background-image: url(../assets/icons/RocketLaunch.svg);
   background-color: transparent;
   margin-right: 5px;
 }
@@ -430,7 +429,7 @@ input:focus {
   font-family: "Work Sans";
   font-size: 38px;
   font-weight: 600;
-  line-height: 120%; /* 45.6px */
+  line-height: 120%;
   text-transform: capitalize;
 }
 
@@ -490,7 +489,7 @@ input:focus {
   font-family: "Work Sans";
   font-size: 22px;
   font-weight: 600;
-  line-height: 140%; /* 30.8px */
+  line-height: 140%;
   text-transform: capitalize;
 }
 
@@ -506,7 +505,7 @@ input:focus {
   font-family: "Work Sans";
   font-size: 22px;
   font-weight: 600;
-  line-height: 140%; /* 30.8px */
+  line-height: 140%;
   text-transform: capitalize;
 }
 
@@ -523,7 +522,7 @@ input:focus {
   display: block;
   height: 24px;
   width: 24px;
-  background-image: url(../../../../assets/images/minifoto1.png);
+  background-image: url(../assets/images/minifoto1.png);
   background-color: transparent;
   margin-right: 5px;
   border-radius: 50%;
@@ -558,15 +557,15 @@ input:focus {
 }
 
 .avatar2 {
-  background-image: url(../../../../assets/avatars/avatar2.png);
+  background-image: url(../assets/avatars/avatar2.png);
 }
 
 .avatar3 {
-  background-image: url(../../../../assets/avatars/avatar3.png);
+  background-image: url(../assets/avatars/avatar3.png);
 }
 
 .avatar4 {
-  background-image: url(../../../../assets/avatars/avatar4.png);
+  background-image: url(../assets/avatars/avatar4.png);
 }
 
 .artist-colum {
@@ -619,7 +618,7 @@ input:focus {
   font-family: "Work Sans";
   font-size: 38px;
   font-weight: 600;
-  line-height: 120%; /* 45.6px */
+  line-height: 120%;
   text-transform: capitalize;
 }
 
@@ -644,7 +643,7 @@ input:focus {
   display: block;
   width: 20px;
   height: 20px;
-  background-image: url(../../../../assets/icons/RocketLaunch.svg);
+  background-image: url(../assets/icons/RocketLaunch.svg);
 }
 
 .text-buton {
@@ -652,7 +651,7 @@ input:focus {
   font-family: "Work Sans";
   font-size: 16px;
   font-weight: 400;
-  line-height: 140%; /* 22.4px */
+  line-height: 140%;
 }
 
 .artist-block2 {
@@ -759,7 +758,7 @@ input:focus {
   font-family: "Work Sans";
   font-size: 22px;
   font-weight: 600;
-  line-height: 140%; /* 30.8px */
+  line-height: 140%;
   text-transform: capitalize;
 }
 
@@ -781,7 +780,7 @@ input:focus {
   font-family: "Work Sans";
   font-size: 38px;
   font-weight: 600;
-  line-height: 120%; /* 45.6px */
+  line-height: 120%;
   text-transform: capitalize;
 }
 
@@ -820,7 +819,7 @@ input:focus {
 }
 
 .one::before {
-  content: url(../../../../assets/icons/PaintBrush.svg);
+  content: url(../assets/icons/PaintBrush.svg);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -830,7 +829,7 @@ input:focus {
 }
 
 .two::before {
-  content: url(../../../../assets/icons/Swatches.svg);
+  content: url(../assets/icons/Swatches.svg);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -840,7 +839,7 @@ input:focus {
 }
 
 .three::before {
-  content: url(../../../../assets/icons/MusicNotes.svg);
+  content: url(../assets/icons/MusicNotes.svg);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -850,7 +849,7 @@ input:focus {
 }
 
 .four::before {
-  content: url(../../../../assets/icons/Camera.svg);
+  content: url(../assets/icons/Camera.svg);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -860,7 +859,7 @@ input:focus {
 }
 
 .five::before {
-  content: url(../../../../assets/icons/VideoCamera.svg);
+  content: url(../assets/icons/VideoCamera.svg);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -870,7 +869,7 @@ input:focus {
 }
 
 .six::before {
-  content: url(../../../../assets/icons/MagicWand.svg);
+  content: url(../assets/icons/MagicWand.svg);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -880,7 +879,7 @@ input:focus {
 }
 
 .seven::before {
-  content: url(../../../../assets/icons/Basketball.svg);
+  content: url(../assets/icons/Basketball.svg);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -890,7 +889,7 @@ input:focus {
 }
 
 .night::before {
-  content: url(../../../../assets/icons/Planet.svg);
+  content: url(../assets/icons/Planet.svg);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -903,7 +902,7 @@ input:focus {
   font-family: "Work Sans";
   font-size: 22px;
   font-weight: 600;
-  line-height: 140%; /* 30.8px */
+  line-height: 140%;
   text-transform: capitalize;
   background-color: var(--bg-color-card);
   padding: 20px 30px 25px 30px;
@@ -934,14 +933,14 @@ input:focus {
   font-family: "Work Sans";
   font-size: 38px;
   font-weight: 600;
-  line-height: 120%; /* 45.6px */
+  line-height: 120%;
   text-transform: capitalize;
 }
 .nft-box-title span {
   font-family: "Work Sans";
   font-size: 22px;
   font-weight: 400;
-  line-height: 160%; /* 35.2px */
+  line-height: 160%;
   text-transform: capitalize;
 }
 
@@ -962,12 +961,12 @@ input:focus {
   font-family: "Work Sans";
   font-size: 16px;
   font-weight: 400;
-  line-height: 140%; /* 22.4px */
+  line-height: 140%;
   border-radius: 20px;
   border: 2px solid #a259ff;
 }
 .nft-box-button::before {
-  content: url(../../../../assets/icons/Eye.svg);
+  content: url(../assets/icons/Eye.svg);
   width: 20px;
   height: 20px;
 }
@@ -1054,7 +1053,7 @@ input:focus {
   font-family: "Work Sans";
   font-size: 22px;
   font-weight: 600;
-  line-height: 140%; /* 30.8px */
+  line-height: 140%;
   text-transform: capitalize;
 }
 .nft-card-title-name span {
@@ -1065,7 +1064,7 @@ input:focus {
   font-family: "Work Sans";
   font-size: 16px;
   font-weight: 400;
-  line-height: 140%; /* 22.4px */
+  line-height: 140%;
 }
 .nft-card-title-name span::before {
   content: "";
@@ -1075,7 +1074,7 @@ input:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url(../../../../assets/avatars/avatar1.png);
+  background-image: url(../assets/avatars/avatar1.png);
   border-radius: 50%;
   width: 24px;
   height: 24px;
@@ -1124,7 +1123,7 @@ input:focus {
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 110%; /* 13.2px */
+  line-height: 110%;
   color: #858584;
 }
 
@@ -1154,13 +1153,13 @@ input:focus {
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 110%; /* 13.2px */
+  line-height: 110%;
   color: #858584;
 }
 
 .magic {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(162, 89, 255, 0)), to(#a259ff)), url(../../../../assets/images/NFT_background.png);
-  background-image: linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, #a259ff 100%), url(../../../../assets/images/NFT_background.png);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(162, 89, 255, 0)), to(#a259ff)), url(../assets/images/NFT_background.png);
+  background-image: linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, #a259ff 100%), url(../assets/images/NFT_background.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1209,7 +1208,7 @@ input:focus {
   font-size: 51px;
   font-style: normal;
   font-weight: 600;
-  line-height: 110%; /* 56.1px */
+  line-height: 110%;
   text-transform: capitalize;
 }
 
@@ -1235,7 +1234,7 @@ input:focus {
   border-radius: 20px;
 }
 .magic-artist-batton span::before {
-  content: url(../../../../assets/icons/Eye.svg);
+  content: url(../assets/icons/Eye.svg);
   width: 20px;
   height: 20px;
 }
@@ -1270,7 +1269,7 @@ input:focus {
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 110%; /* 13.2px */
+  line-height: 110%;
   color: #858584;
   color: #fff;
 }
@@ -1297,7 +1296,7 @@ input:focus {
   font-size: 38px;
   font-style: normal;
   font-weight: 700;
-  line-height: 120%; /* 45.6px */
+  line-height: 120%;
   text-transform: capitalize;
 }
 .magic-time-clock span:last-child {
@@ -1305,7 +1304,7 @@ input:focus {
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 110%; /* 13.2px */
+  line-height: 110%;
   color: #858584;
   color: #fff;
 }
@@ -1314,7 +1313,7 @@ input:focus {
   font-family: "Space Mono";
   font-size: 28px;
   font-weight: 700;
-  line-height: 140%; /* 39.2px */
+  line-height: 140%;
   text-transform: capitalize;
 }
 
@@ -1341,7 +1340,7 @@ input:focus {
   font-family: "Work Sans";
   font-size: 38px;
   font-weight: 600;
-  line-height: 120%; /* 45.6px */
+  line-height: 120%;
   text-transform: capitalize;
   margin-bottom: 10px;
 }
@@ -1397,7 +1396,7 @@ input:focus {
   font-family: "Work Sans";
   font-size: 22px;
   font-weight: 600;
-  line-height: 140%; /* 30.8px */
+  line-height: 140%;
   text-transform: capitalize;
 }
 .works-card-title p {
@@ -1428,7 +1427,7 @@ input:focus {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 0px;
           flex: 1 0 0;
-  background-image: url(../../../../assets/images/subscribe.png);
+  background-image: url(../assets/images/subscribe.png);
   background-repeat: no-repeat;
   background-color: lightgray;
   background-position: 50% 50%;
@@ -1471,7 +1470,7 @@ input:focus {
   font-family: "Work Sans";
   font-size: 38px;
   font-weight: 600;
-  line-height: 120%; /* 45.6px */
+  line-height: 120%;
   text-transform: capitalize;
 }
 
@@ -1510,7 +1509,7 @@ input:focus {
   border-radius: 20px;
 }
 .subscribe-title-folover span:last-child::before {
-  content: url(../../../../assets/icons/EnvelopeSimple.svg);
+  content: url(../assets/icons/EnvelopeSimple.svg);
   height: 20px;
   width: 20px;
 }
@@ -1573,7 +1572,7 @@ input:focus {
   font-size: 51px;
   font-style: normal;
   font-weight: 600;
-  line-height: 110%; /* 56.1px */
+  line-height: 110%;
   text-transform: capitalize;
 }
 .account-title span {
@@ -1634,7 +1633,7 @@ input:focus {
 }
 
 .create-wallet-foto {
-  background-image: url(../../../../assets/images/wallet.png);
+  background-image: url(../assets/images/wallet.png);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1681,7 +1680,7 @@ input:focus {
   font-family: "Work Sans";
   font-size: 22px;
   font-weight: 600;
-  line-height: 140%; /* 30.8px */
+  line-height: 140%;
   text-transform: capitalize;
 }
 .mettalink-form a img {
@@ -1722,14 +1721,14 @@ input:focus {
   font-size: 51px;
   font-style: normal;
   font-weight: 600;
-  line-height: 110%; /* 56.1px */
+  line-height: 110%;
   text-transform: capitalize;
 }
 .marcetplace-title span {
   font-family: "Work Sans";
   font-size: 22px;
   font-weight: 400;
-  line-height: 160%; /* 35.2px */
+  line-height: 160%;
   text-transform: capitalize;
 }
 
@@ -1791,7 +1790,7 @@ input:focus {
   font-family: "Work Sans";
   font-size: 22px;
   font-weight: 600;
-  line-height: 140%; /* 30.8px */
+  line-height: 140%;
   text-transform: capitalize;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1835,7 +1834,7 @@ input:focus {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 140%; /* 22.4px */
+  line-height: 140%;
   position: absolute;
   border-radius: 20px;
   background-color: var(--color-cost-card);
@@ -1848,7 +1847,7 @@ input:focus {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 140%; /* 22.4px */
+  line-height: 140%;
   position: absolute;
   border-radius: 20px;
   background-color: var(--bg-color-card);
@@ -1873,7 +1872,7 @@ input:focus {
 
 .profile {
   height: 320px;
-  background-image: url(../../../../assets/images/bg-profile.png);
+  background-image: url(../assets/images/bg-profile.png);
   background-repeat: no-repeat;
   background-color: lightgray;
   background-position: 50% 50%;
@@ -1928,7 +1927,7 @@ input:focus {
   font-size: 51px;
   font-style: normal;
   font-weight: 600;
-  line-height: 110%; /* 56.1px */
+  line-height: 110%;
   text-transform: capitalize;
 }
 
@@ -1956,14 +1955,14 @@ input:focus {
   font-family: "Space Mono";
   font-size: 28px;
   font-weight: 700;
-  line-height: 140%; /* 39.2px */
+  line-height: 140%;
   text-transform: capitalize;
 }
 .followers-one span:last-child {
   font-family: "Work Sans";
   font-size: 22px;
   font-weight: 400;
-  line-height: 160%; /* 35.2px */
+  line-height: 160%;
   text-transform: capitalize;
 }
 
@@ -1982,7 +1981,7 @@ input:focus {
   font-size: 22px;
   font-style: normal;
   font-weight: 700;
-  line-height: 160%; /* 35.2px */
+  line-height: 160%;
   text-transform: capitalize;
   color: var(--color-cost-card);
 }
@@ -1990,7 +1989,7 @@ input:focus {
   font-family: "Work Sans";
   font-size: 22px;
   font-weight: 400;
-  line-height: 160%; /* 35.2px */
+  line-height: 160%;
   text-transform: capitalize;
 }
 
@@ -2009,7 +2008,7 @@ input:focus {
   font-size: 22px;
   font-style: normal;
   font-weight: 700;
-  line-height: 160%; /* 35.2px */
+  line-height: 160%;
   text-transform: capitalize;
   color: var(--color-cost-card);
 }
@@ -2046,14 +2045,14 @@ input:focus {
   width: 186px;
 }
 .button-box a:first-child::before {
-  content: url(../../../../assets/icons/Copy.svg);
+  content: url(../assets/icons/Copy.svg);
   display: block;
 }
 .button-box a:last-child {
   width: 145px;
 }
 .button-box a:last-child::before {
-  content: url(../../../../assets/icons/Plus.svg);
+  content: url(../assets/icons/Plus.svg);
   display: block;
 }
 
@@ -2088,7 +2087,7 @@ hr {
   font-family: "Work Sans";
   font-size: 22px;
   font-weight: 600;
-  line-height: 140%; /* 30.8px */
+  line-height: 140%;
   text-transform: capitalize;
 }
 .select-box span:hover {
@@ -2108,7 +2107,7 @@ hr {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 140%; /* 22.4px */
+  line-height: 140%;
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
@@ -2202,7 +2201,7 @@ hr {
   font-size: 22px;
   font-style: normal;
   font-weight: 700;
-  line-height: 160%; /* 35.2px */
+  line-height: 160%;
   text-transform: capitalize;
 }
 
@@ -2228,7 +2227,7 @@ hr {
   font-family: "Work Sans";
   font-size: 22px;
   font-weight: 600;
-  line-height: 140%; /* 30.8px */
+  line-height: 140%;
   text-transform: capitalize;
 }
 
@@ -2279,7 +2278,7 @@ hr {
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 110%; /* 13.2px */
+  line-height: 110%;
   color: #858584;
 }
 
@@ -2383,7 +2382,7 @@ hr {
     font-family: "Work Sans";
     font-size: 38px;
     font-weight: 600;
-    line-height: 120%; /* 45.6px */
+    line-height: 120%;
     text-transform: capitalize;
     margin-top: 50px;
     -webkit-backdrop-filter: blur(20px) saturate(120%) contrast(200%);
@@ -2415,7 +2414,7 @@ hr {
     display: flex;
     width: 30px;
     height: 30px;
-    background-image: url(../../assets/icons/arrow.svg);
+    background-image: url(../assets/icons/arrow.svg);
     background-repeat: no-repeat;
     background-color: lightgray;
     background-position: 50% 50%;
@@ -2492,7 +2491,7 @@ hr {
     font-family: "Work Sans";
     font-size: 38px;
     font-weight: 600;
-    line-height: 120%; /* 45.6px */
+    line-height: 120%;
     text-transform: capitalize;
   }
   .object-text p {
@@ -2503,7 +2502,7 @@ hr {
     font-family: "Work Sans";
     font-size: 16px;
     font-weight: 400;
-    line-height: 140%; /* 22.4px */
+    line-height: 140%;
   }
   .object-buttons a {
     font-weight: 600;
@@ -2513,7 +2512,7 @@ hr {
     font-family: "Work Sans";
     font-size: 22px;
     font-weight: 600;
-    line-height: 140%; /* 30.8px */
+    line-height: 140%;
     text-transform: capitalize;
   }
   .object-folovers ul li:nth-child(n+4):nth-child(-n+6) {
@@ -2521,7 +2520,7 @@ hr {
     font-family: "Work Sans";
     font-size: 16px;
     font-weight: 400;
-    line-height: 140%; /* 22.4px */
+    line-height: 140%;
     text-align: left;
   }
   .object-foto {
@@ -2536,7 +2535,7 @@ hr {
     font-size: 28px;
     font-style: normal;
     font-weight: 600;
-    line-height: 140%; /* 39.2px */
+    line-height: 140%;
     text-transform: capitalize;
   }
   .colections-card:nth-child(n+3) {
@@ -2593,7 +2592,7 @@ hr {
     font-family: "Work Sans";
     font-size: 16px;
     font-weight: 400;
-    line-height: 140%; /* 22.4px */
+    line-height: 140%;
   }
   .categories {
     padding: 40px 0;
@@ -2602,7 +2601,7 @@ hr {
     font-family: "Space Mono";
     font-size: 28px;
     font-weight: 700;
-    line-height: 140%; /* 39.2px */
+    line-height: 140%;
     text-transform: capitalize;
   }
   .colections-card-row {
@@ -2636,7 +2635,7 @@ hr {
     font-family: "Space Mono";
     font-size: 28px;
     font-weight: 700;
-    line-height: 140%; /* 39.2px */
+    line-height: 140%;
     text-transform: capitalize;
   }
   .nft-box-title span {
@@ -2644,7 +2643,7 @@ hr {
     font-family: "Work Sans";
     font-size: 16px;
     font-weight: 400;
-    line-height: 140%; /* 22.4px */
+    line-height: 140%;
   }
   .nft-box-button span {
     color: var(--White, #fff);
@@ -2673,7 +2672,7 @@ hr {
     font-family: "Work Sans";
     font-size: 38px;
     font-weight: 600;
-    line-height: 120%; /* 45.6px */
+    line-height: 120%;
     text-transform: capitalize;
   }
   .works {
@@ -2702,7 +2701,7 @@ hr {
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    line-height: 140%; /* 16.8px */
+    line-height: 140%;
   }
   .subscribe-box {
     gap: 30px;
@@ -2719,7 +2718,7 @@ hr {
     font-family: "Space Mono";
     font-size: 28px;
     font-weight: 700;
-    line-height: 140%; /* 39.2px */
+    line-height: 140%;
     text-transform: capitalize;
   }
   .subscribe-title-folover {
@@ -2767,7 +2766,7 @@ hr {
   .create-wallet-foto {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
-    background-image: url(../../../../assets/images/content1.png);
+    background-image: url(../assets/images/content1.png);
     background-size: cover;
     background-color: lightgray;
     background-repeat: no-repeat;
@@ -2798,7 +2797,7 @@ hr {
     font-family: "Work Sans";
     font-size: 38px;
     font-weight: 600;
-    line-height: 120%; /* 45.6px */
+    line-height: 120%;
     text-transform: capitalize;
   }
   .marketplace {
@@ -2808,14 +2807,14 @@ hr {
     font-family: "Work Sans";
     font-size: 38px;
     font-weight: 600;
-    line-height: 120%; /* 45.6px */
+    line-height: 120%;
     text-transform: capitalize;
   }
   .marcetplace-title span {
     font-family: "Work Sans";
     font-size: 16px;
     font-weight: 400;
-    line-height: 140%; /* 22.4px */
+    line-height: 140%;
     font-style: normal;
   }
   .marcetplace-box-nft span {
@@ -2869,7 +2868,7 @@ hr {
     font-family: "Work Sans";
     font-size: 38px;
     font-weight: 600;
-    line-height: 120%; /* 45.6px */
+    line-height: 120%;
     text-transform: capitalize;
   }
   .title-box span:first-child {
@@ -2877,35 +2876,35 @@ hr {
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
-    line-height: 160%; /* 35.2px */
+    line-height: 160%;
     text-transform: capitalize;
   }
   .title-box span:last-child {
     font-family: "Work Sans";
     font-size: 16px;
     font-weight: 400;
-    line-height: 140%; /* 22.4px */
+    line-height: 140%;
     font-style: normal;
   }
   .box-bio p {
     font-family: "Work Sans";
     font-size: 16px;
     font-weight: 400;
-    line-height: 140%; /* 22.4px */
+    line-height: 140%;
     font-style: normal;
   }
   .box-bio span {
     font-family: "Work Sans";
     font-size: 16px;
     font-weight: 400;
-    line-height: 140%; /* 22.4px */
+    line-height: 140%;
     font-style: normal;
   }
   .box-links p {
     font-family: "Work Sans";
     font-size: 16px;
     font-weight: 400;
-    line-height: 140%; /* 22.4px */
+    line-height: 140%;
     font-style: normal;
   }
   .spans {
@@ -2939,7 +2938,7 @@ hr {
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    line-height: 110%; /* 13.2px */
+    line-height: 110%;
     color: #858584;
   }
 }
@@ -2959,7 +2958,7 @@ hr {
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
-    line-height: 160%; /* 35.2px */
+    line-height: 160%;
     text-transform: capitalize;
   }
   .object {
@@ -2986,7 +2985,7 @@ hr {
     font-size: 28px;
     font-style: normal;
     font-weight: 600;
-    line-height: 140%; /* 39.2px */
+    line-height: 140%;
     text-transform: capitalize;
   }
   .object-text p {
@@ -3016,7 +3015,7 @@ hr {
     font-size: 28px;
     font-style: normal;
     font-weight: 600;
-    line-height: 140%; /* 39.2px */
+    line-height: 140%;
     text-transform: capitalize;
   }
   .colections-card:nth-child(n+2) {
@@ -3040,7 +3039,7 @@ hr {
     font-size: 28px;
     font-style: normal;
     font-weight: 600;
-    line-height: 140%; /* 39.2px */
+    line-height: 140%;
     text-transform: capitalize;
   }
   .artist-button {
@@ -3055,7 +3054,7 @@ hr {
     font-size: 28px;
     font-style: normal;
     font-weight: 600;
-    line-height: 140%; /* 39.2px */
+    line-height: 140%;
     text-transform: capitalize;
   }
   .categories-card-box {
@@ -3072,7 +3071,7 @@ hr {
     font-size: 28px;
     font-style: normal;
     font-weight: 600;
-    line-height: 140%; /* 39.2px */
+    line-height: 140%;
     text-transform: capitalize;
   }
   .nft-box-button {
@@ -3114,7 +3113,7 @@ hr {
     font-size: 28px;
     font-style: normal;
     font-weight: 600;
-    line-height: 140%; /* 39.2px */
+    line-height: 140%;
     text-transform: capitalize;
   }
   .works-card {
@@ -3195,7 +3194,7 @@ hr {
     font-family: "Space Mono";
     font-size: 28px;
     font-weight: 700;
-    line-height: 140%; /* 39.2px */
+    line-height: 140%;
     text-transform: capitalize;
   }
   .marcetplace-box-nft span:first-child::before, .marcetplace-box-nft span:last-child::before {
@@ -3225,7 +3224,7 @@ hr {
     font-family: "Space Mono";
     font-size: 28px;
     font-weight: 700;
-    line-height: 140%; /* 39.2px */
+    line-height: 140%;
     text-transform: capitalize;
   }
   .box-folowers {

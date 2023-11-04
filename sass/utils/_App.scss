@@ -11,7 +11,6 @@ html {
   width: 100%;
   box-sizing: border-box;
   color: var(--font-color);
-  // padding: 0 20px;
   background-color: var(--bg-color);
 }
 body {
@@ -19,7 +18,7 @@ body {
   font-family: "Work Sans";
   font-size: 16px;
   font-weight: 400;
-  line-height: 140%; /* 22.4px */
+  line-height: 140%;
   font-style: normal;
 }
 footer {
@@ -42,7 +41,6 @@ h5 {
   background: transparent;
   padding: 0;
   margin: 0;
-  // background-color: inherit;
 }
 
 button {
@@ -55,8 +53,8 @@ button {
 
 a,
 input {
-  text-decoration: none; /* Убирает подчеркивание по умолчанию */
-  color: black; /* Устанавливает цвет текста на наследованный цвет */
+  text-decoration: none;
+  color: black;
   cursor: pointer;
   &:focus {
     outline: none;
@@ -73,7 +71,6 @@ input {
   max-width: 1050px;
   margin-right: auto;
   margin-left: auto;
-  // background-color: transparent;
 }
 
 .row {
@@ -86,7 +83,7 @@ input {
   font-family: "Work Sans";
   font-size: 16px;
   font-weight: 400;
-  line-height: 140%; /* 22.4px */
+  line-height: 140%;
 }
 
 @mixin text-600 {
@@ -102,7 +99,7 @@ input {
   font-family: "Work Sans";
   font-size: 67px;
   font-weight: 600;
-  line-height: 110%; /* 73.7px */
+  line-height: 110%;
   text-transform: capitalize;
 }
 
@@ -111,7 +108,7 @@ input {
   font-size: 51px;
   font-style: normal;
   font-weight: 600;
-  line-height: 110%; /* 56.1px */
+  line-height: 110%;
   text-transform: capitalize;
 }
 
@@ -119,7 +116,7 @@ input {
   font-family: "Work Sans";
   font-size: 38px;
   font-weight: 600;
-  line-height: 120%; /* 45.6px */
+  line-height: 120%;
   text-transform: capitalize;
 }
 
@@ -128,7 +125,7 @@ input {
   font-size: 38px;
   font-style: normal;
   font-weight: 700;
-  line-height: 120%; /* 45.6px */
+  line-height: 120%;
   text-transform: capitalize;
 }
 
@@ -136,7 +133,7 @@ input {
   font-family: "Space Mono";
   font-size: 28px;
   font-weight: 700;
-  line-height: 140%; /* 39.2px */
+  line-height: 140%;
   text-transform: capitalize;
 }
 
@@ -145,7 +142,7 @@ input {
   font-size: 28px;
   font-style: normal;
   font-weight: 600;
-  line-height: 140%; /* 39.2px */
+  line-height: 140%;
   text-transform: capitalize;
 }
 
@@ -153,7 +150,7 @@ input {
   font-family: "Work Sans";
   font-size: 22px;
   font-weight: 600;
-  line-height: 140%; /* 30.8px */
+  line-height: 140%;
   text-transform: capitalize;
 }
 
@@ -162,7 +159,7 @@ input {
   font-size: 22px;
   font-style: normal;
   font-weight: 700;
-  line-height: 160%; /* 35.2px */
+  line-height: 160%;
   text-transform: capitalize;
 }
 
@@ -170,14 +167,14 @@ input {
   font-family: "Work Sans";
   font-size: 22px;
   font-weight: 400;
-  line-height: 160%; /* 35.2px */
+  line-height: 160%;
   text-transform: capitalize;
 }
 @mixin body-text16 {
   font-family: "Work Sans";
   font-size: 16px;
   font-weight: 400;
-  line-height: 140%; /* 22.4px */
+  line-height: 140%;
   font-style: normal;
 }
 
@@ -186,7 +183,7 @@ input {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 140%; /* 22.4px */
+  line-height: 140%;
 }
 
 @mixin Caption {
@@ -194,7 +191,7 @@ input {
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 110%; /* 13.2px */
+  line-height: 110%;
   color: #858584;
 }
 
@@ -204,7 +201,7 @@ input {
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 140%; /* 16.8px */
+  line-height: 140%;
 }
 
 @mixin foto {

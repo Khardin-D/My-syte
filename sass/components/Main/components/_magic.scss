@@ -4,7 +4,7 @@
       rgba(162, 89, 255, 0) 0%,
       #a259ff 100%
     ),
-    url(../../../../assets/images/NFT_background.png);
+    url(../assets/images/NFT_background.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -48,9 +48,9 @@
     background-color: #fff;
     border-radius: 20px;
     &::before {
-        content: url(../../../../assets/icons/Eye.svg);
-        width: 20px;
-        height: 20px;
+      content: url(../assets/icons/Eye.svg);
+      width: 20px;
+      height: 20px;
     }
   }
 }

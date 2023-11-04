@@ -21,13 +21,11 @@
   }
 }
 .object-buttons {
-    display: flex;
-    a {
-      @include nav-text;
-    }
+  display: flex;
+  a {
+    @include nav-text;
+  }
 }
-
-
 
 .object-folovers {
   display: flex;
@@ -75,7 +73,7 @@
     display: block;
     height: 24px;
     width: 24px;
-    background-image: url(../../../../assets/images/Avatar\ Placeholder.png);
+    background-image: url(../assets/images/Avatar\ Placeholder.png);
 
     position: absolute;
     right: 90px;

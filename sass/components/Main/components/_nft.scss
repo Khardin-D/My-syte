@@ -24,7 +24,7 @@
   border-radius: 20px;
   border: 2px solid #a259ff;
   &::before {
-    content: url(../../../../assets/icons/Eye.svg);
+    content: url(../assets/icons/Eye.svg);
     width: 20px;
     height: 20px;
   }
@@ -75,19 +75,17 @@
 .nft-card-title-name {
   background-color: inherit;
 
-  
-  
   p {
     @include h5;
   }
-  span{
+  span {
     display: flex;
     @include nav-text;
     &::before {
       content: "";
       display: inline-flex;
       align-items: center;
-      background-image: url(../../../../assets/avatars/avatar1.png);
+      background-image: url(../assets/avatars/avatar1.png);
       border-radius: 50%;
       width: 24px;
       height: 24px;

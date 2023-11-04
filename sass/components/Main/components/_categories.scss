@@ -23,7 +23,7 @@
 
   border-radius: 20px 20px 0px 0px;
   position: relative;
-  
+
   img {
     filter: blur(5.5px);
     width: 240px;
@@ -34,7 +34,7 @@
 
 .one {
   &::before {
-    content: url(../../../../assets/icons/PaintBrush.svg);
+    content: url(../assets/icons/PaintBrush.svg);
 
     position: absolute;
     top: 50%;
@@ -46,7 +46,7 @@
 
 .two {
   &::before {
-    content: url(../../../../assets/icons/Swatches.svg);
+    content: url(../assets/icons/Swatches.svg);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -57,7 +57,7 @@
 
 .three {
   &::before {
-    content: url(../../../../assets/icons/MusicNotes.svg);
+    content: url(../assets/icons/MusicNotes.svg);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -67,7 +67,7 @@
 }
 .four {
   &::before {
-    content: url(../../../../assets/icons/Camera.svg);
+    content: url(../assets/icons/Camera.svg);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -77,7 +77,7 @@
 }
 .five {
   &::before {
-    content: url(../../../../assets/icons/VideoCamera.svg);
+    content: url(../assets/icons/VideoCamera.svg);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -87,7 +87,7 @@
 }
 .six {
   &::before {
-    content: url(../../../../assets/icons/MagicWand.svg);
+    content: url(../assets/icons/MagicWand.svg);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -97,7 +97,7 @@
 }
 .seven {
   &::before {
-    content: url(../../../../assets/icons/Basketball.svg);
+    content: url(../assets/icons/Basketball.svg);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -107,7 +107,7 @@
 }
 .night {
   &::before {
-    content: url(../../../../assets/icons/Planet.svg);
+    content: url(../assets/icons/Planet.svg);
     position: absolute;
     top: 50%;
     left: 50%;

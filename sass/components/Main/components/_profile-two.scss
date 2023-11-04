@@ -74,7 +74,7 @@
     &:first-child {
       width: 186px;
       &::before {
-        content: url(../../../../assets/icons/Copy.svg);
+        content: url(../assets/icons/Copy.svg);
         display: block;
       }
     }
@@ -82,7 +82,7 @@
     &:last-child {
       width: 145px;
       &::before {
-        content: url(../../../../assets/icons/Plus.svg);
+        content: url(../assets/icons/Plus.svg);
         display: block;
       }
     }

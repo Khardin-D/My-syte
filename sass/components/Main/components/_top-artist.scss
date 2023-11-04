@@ -19,7 +19,7 @@
   align-items: flex-start;
   gap: 10px;
   flex-shrink: 0;
-  h3{
+  h3 {
     @include h3;
   }
 }
@@ -38,7 +38,7 @@
     display: block;
     width: 20px;
     height: 20px;
-    background-image: url(../../../../assets/icons/RocketLaunch.svg);
+    background-image: url(../assets/icons/RocketLaunch.svg);
   }
 }
 
