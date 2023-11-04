@@ -87,8 +87,12 @@
             </div>
             <div class="marcetplace-box-two">
               <div class="marcetplace-box-nft">
-                <span id="span1" onclick="showCards('flex')">NFTs</span>
-                <span id="span2" onclick="showCards('flex2')">Collections</span>
+                <span id="span1" onclick="showCards('flex')" class="on"
+                  >NFTs</span
+                >
+                <span id="span2" onclick="showCards('flex2')" class="on"
+                  >Collections</span
+                >
               </div>
               <div class="nft-card-box box-pading">
                 <div class="nft-card flex">
@@ -575,18 +579,34 @@
       window.location.href = "Conect-Wallet.html";
     });
     function showCards(className) {
-      // Скрываем все элементы с классами .flex и .flex2
       const allFlex = document.querySelectorAll(".flex, .flex2");
       allFlex.forEach((card) => {
         card.style.display = "none";
       });
 
-      // Отображаем элементы, которые соответствуют выбранному классу
       const selectedFlex = document.querySelectorAll("." + className);
       selectedFlex.forEach((card) => {
         card.style.display = "flex";
       });
     }
     showCards("flex");
+    const elements = document.querySelectorAll(".on");
+
+    elements.forEach((element) => {
+      element.addEventListener("click", () => {
+        element.classList.add("active");
+      });
+    });
+    const elementc = document.querySelectorAll(".on");
+
+    elementc.forEach((element) => {
+      element.addEventListener("click", () => {
+        elementc.forEach((el) => {
+          el.classList.remove("active");
+        });
+
+        element.classList.add("active");
+      });
+    });
   </script>
 </html>
