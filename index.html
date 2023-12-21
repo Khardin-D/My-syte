@@ -23,7 +23,7 @@
   <body>
     <div id="root">
       <nav>
-        <section class="header">
+        <section class="header" draggable="true">
           <div class="container-header">
             <div class="header-row">
               <div class="header-logo">
@@ -66,11 +66,14 @@
             </div>
           </div>
         </section>
+        <div class="d1">
+          <button onclick="showMass()">покажи список</button>
+        </div>
       </nav>
 
       <main>
         <!-- !  object -->
-        <section class="object">
+        <section class="object" draggable="true">
           <div class="container container-object">
             <div class="object-block">
               <!-- ! object-text -->
@@ -113,7 +116,7 @@
         <!-- !  section = object -->
 
         <!-- ! colections -->
-        <section class="colections">
+        <section class="colections" draggable="true">
           <div class="container">
             <div class="colections-title">
               <ul>
@@ -188,7 +191,7 @@
         <!-- ! colections -->
 
         <!-- ! Top-Artist -->
-        <section class="top-artist">
+        <section class="top-artist" draggable="true">
           <div class="container">
             <div class="artist-colum">
               <div class="artist-block1">
@@ -359,7 +362,7 @@
         <!-- ! Top-Artist -->
 
         <!-- ! Categories -->
-        <section class="categories">
+        <section class="categories" draggable="true">
           <div class="container">
             <div class="categories-title">
               <span>Browse Categories</span>
@@ -446,7 +449,7 @@
         <!-- ! Categories -->
 
         <!-- ! NFT -->
-        <section class="nft">
+        <section class="nft" draggable="true">
           <div class="container">
             <div class="nft-box">
               <div class="nft-box-title">
@@ -529,7 +532,7 @@
         <!-- ! NFT -->
 
         <!-- ! Magic -->
-        <section class="magic">
+        <section class="magic" draggable="true">
           <div class="container positions">
             <div class="magic-row">
               <div class="magic-artist">
@@ -549,15 +552,15 @@
                 </div>
                 <div class="magic-time-number">
                   <div class="magic-time-clock">
-                    <span>59</span><span>Hours</span>
+                    <span id="1">59</span><span>Hours</span>
                   </div>
                   <div class="magic-time-probel"><span>:</span></div>
                   <div class="magic-time-clock">
-                    <span>59</span><span>Minutes</span>
+                    <span id="2">59</span><span>Minutes</span>
                   </div>
                   <div class="magic-time-probel"><span>:</span></div>
                   <div class="magic-time-clock">
-                    <span>59</span><span>Seconds</span>
+                    <span id="3">59</span><span>Seconds</span>
                   </div>
                 </div>
               </div>
@@ -567,7 +570,7 @@
         <!-- ! Magic -->
 
         <!-- ! Magic -->
-        <section class="works">
+        <section class="works" draggable="true">
           <div class="container works-container">
             <div class="works-title">
               <span>How it works</span>
@@ -618,7 +621,7 @@
         <!-- ! Magic -->
 
         <!-- ! Subscribe -->
-        <section class="subscribe">
+        <section class="subscribe" draggable="true">
           <div class="container subscribe-container">
             <div class="subscribe-box">
               <div class="subscribe-image"></div>
@@ -633,7 +636,7 @@
                 <div class="subscribe-title-folover">
                   <input
                     type="text"
-                    name=""
+                    name="email"
                     id=""
                     placeholder="Enter your email here"
                   />
@@ -693,7 +696,7 @@
               <div class="subscribe-title-folover">
                 <input
                   type="text"
-                  name=""
+                  name="email"
                   id=""
                   placeholder="Enter your email here"
                 />
@@ -753,4 +756,5 @@
       menu.classList.toggle("active");
     });
   </script>
+  <script src="./js/index.js"></script>
 </html>

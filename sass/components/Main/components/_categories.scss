@@ -15,33 +15,35 @@
   justify-content: center;
   gap: 30px;
 }
-
 .categories-card {
-  animation: card 1s ease-in-out forwards 10s;
   opacity: 0;
+}
+.categories-card-active {
+  animation: card 1s ease forwards 0s;
+
   &:nth-child(1) {
-    animation-delay: 15s;
+    animation-delay: 1s;
   }
   &:nth-child(2) {
-    animation-delay: 15.2s;
+    animation-delay: 1.2s;
   }
   &:nth-child(3) {
-    animation-delay: 15.4s;
+    animation-delay: 1.4s;
   }
   &:nth-child(4) {
-    animation-delay: 15.6s;
+    animation-delay: 1.6s;
   }
   &:nth-child(5) {
-    animation-delay: 15.8s;
+    animation-delay: 1.8s;
   }
   &:nth-child(6) {
-    animation-delay: 16s;
+    animation-delay: 2s;
   }
   &:nth-child(7) {
-    animation-delay: 16.2s;
+    animation-delay: 2.2s;
   }
   &:nth-child(8) {
-    animation-delay: 16.4s;
+    animation-delay: 2.4s;
   }
 }
 

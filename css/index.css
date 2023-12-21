@@ -123,6 +123,16 @@ input:focus {
           transform: translateX(110%);
 }
 
+.d1 {
+  position: fixed;
+  top: 30px;
+  right: 100px;
+  z-index: 999;
+  height: 50px;
+  width: 100px;
+  background-color: blue;
+}
+
 .header-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -833,41 +843,44 @@ input:focus {
 }
 
 .categories-card {
-  -webkit-animation: card 1s ease-in-out forwards 10s;
-          animation: card 1s ease-in-out forwards 10s;
   opacity: 0;
 }
-.categories-card:nth-child(1) {
-  -webkit-animation-delay: 15s;
-          animation-delay: 15s;
+
+.categories-card-active {
+  -webkit-animation: card 1s ease forwards 0s;
+          animation: card 1s ease forwards 0s;
 }
-.categories-card:nth-child(2) {
-  -webkit-animation-delay: 15.2s;
-          animation-delay: 15.2s;
+.categories-card-active:nth-child(1) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
-.categories-card:nth-child(3) {
-  -webkit-animation-delay: 15.4s;
-          animation-delay: 15.4s;
+.categories-card-active:nth-child(2) {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
 }
-.categories-card:nth-child(4) {
-  -webkit-animation-delay: 15.6s;
-          animation-delay: 15.6s;
+.categories-card-active:nth-child(3) {
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
 }
-.categories-card:nth-child(5) {
-  -webkit-animation-delay: 15.8s;
-          animation-delay: 15.8s;
+.categories-card-active:nth-child(4) {
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
 }
-.categories-card:nth-child(6) {
-  -webkit-animation-delay: 16s;
-          animation-delay: 16s;
+.categories-card-active:nth-child(5) {
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
 }
-.categories-card:nth-child(7) {
-  -webkit-animation-delay: 16.2s;
-          animation-delay: 16.2s;
+.categories-card-active:nth-child(6) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
-.categories-card:nth-child(8) {
-  -webkit-animation-delay: 16.4s;
-          animation-delay: 16.4s;
+.categories-card-active:nth-child(7) {
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
+}
+.categories-card-active:nth-child(8) {
+  -webkit-animation-delay: 2.4s;
+          animation-delay: 2.4s;
 }
 
 .categories-card-foto {
@@ -1314,7 +1327,6 @@ input:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 295px;
   padding: 30px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -2545,8 +2557,8 @@ hr {
 }
 @-webkit-keyframes card {
   0% {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%); /* Начальное положение справа за экраном */
+    -webkit-transform: translateX(10%);
+            transform: translateX(10%); /* Начальное положение справа за экраном */
     opacity: 0;
   }
   100% {
@@ -2557,8 +2569,8 @@ hr {
 }
 @keyframes card {
   0% {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%); /* Начальное положение справа за экраном */
+    -webkit-transform: translateX(10%);
+            transform: translateX(10%); /* Начальное положение справа за экраном */
     opacity: 0;
   }
   100% {
