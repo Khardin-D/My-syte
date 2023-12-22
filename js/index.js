@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const cards = document.querySelectorAll(".categories-card");
 
-  function handleScroll() {
+  function Scrollin() {
     cards.forEach((card) => {
       const rect = card.getBoundingClientRect();
       const isCardVisible = rect.top <= window.innerHeight && rect.bottom >= 0;
@@ -14,8 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  window.addEventListener("scroll", handleScroll);
-  handleScroll(); // Обработка при загрузке страницы
+  window.addEventListener("scroll", Scrollin);
+  Scrollin(); // Обработка при загрузке страницы
 });
 
 // Clock
@@ -59,12 +59,12 @@ let emailValues = [];
 document.addEventListener("DOMContentLoaded", () => {
   const buttons = document.querySelectorAll(".subscribe-title-folover span");
 
-  // !                                                      Перебераем масив кнопок
+  // !             Перебераем масив кнопок
   buttons.forEach((buton) => {
     buton.addEventListener("click", () => {
       const emailValu = document.querySelectorAll('input[name="email"]');
       emailValu.forEach((val) => {
-        //?   В а = мы изымаем содержимое из имейлов
+        //?        В а = мы изымаем содержимое из имейлов
 
         let a = val.value.trim();
         if (a != "") {
@@ -99,6 +99,3 @@ function getParseData() {
 function showMass() {
   console.log(getParseData());
 }
-
-// !                          Drag end Drop
-const section = Array.from(document.querySelectorAll("section"));

@@ -133,6 +133,14 @@ input:focus {
   background-color: blue;
 }
 
+.hide {
+  display: none;
+}
+
+.hovered {
+  background-color: #858584;
+}
+
 .header-row {
   display: -webkit-box;
   display: -ms-flexbox;
